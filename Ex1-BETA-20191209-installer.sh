@@ -258,7 +258,7 @@ phasebeam
 photophase
 phototable
 printservicestock
-provision
+# provision
 simtoolkit
 soundrecorder
 storagemanagerstock
@@ -709,11 +709,11 @@ app/PrintRecommendationService
 product/app/BuiltInPrintService
 product/app/PrintRecommendationService"
 
-provision_list="
-app/Provision
-priv-app/Provision
-product/app/Provision
-product/priv-app/Provision"
+# provision_list="
+# app/Provision
+# priv-app/Provision
+# product/app/Provision
+# product/priv-app/Provision"
 
 simtoolkit_list="
 app/Stk
@@ -1026,7 +1026,7 @@ ui_print " ";
 #                                                  Mount partitions
 
 mounts=""
-for p in "/cache" "/data" "/persist" "/vendor"; do
+for p in "/cache" "/data" "/persist" "/system" "/vendor"; do
   if [ -d "$p" ] && grep -q "$p" "/etc/fstab" && ! mountpoint -q "$p"; then
     if [ -z "$mounts" ]; then
       mounts="$p"
