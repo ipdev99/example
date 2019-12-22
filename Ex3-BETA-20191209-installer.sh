@@ -258,7 +258,7 @@ phasebeam
 photophase
 phototable
 printservicestock
-provision
+# provision
 simtoolkit
 soundrecorder
 storagemanagerstock
@@ -709,11 +709,11 @@ app/PrintRecommendationService
 product/app/BuiltInPrintService
 product/app/PrintRecommendationService"
 
-provision_list="
-app/Provision
-priv-app/Provision
-product/app/Provision
-product/priv-app/Provision"
+# provision_list="
+# app/Provision
+# priv-app/Provision
+# product/app/Provision
+# product/priv-app/Provision"
 
 simtoolkit_list="
 app/Stk
@@ -1043,45 +1043,64 @@ for m in $mounts; do
 done
 
 # _____________________________________________________________________________________________________________________
+#                                       Unmount system and system_root if mounted
+
+grep -q "/system " /proc/mounts && umount system
+## grep -q "/system_root" /proc/mounts && umount system_root
+
+# _____________________________________________________________________________________________________________________
 #                      Detect A/B partition layout https://source.android.com/devices/tech/ota/ab_updates
 #                      and system-as-root https://source.android.com/devices/bootloader/system-as-root
-block=/dev/block/bootdevice/by-name/system
-device_abpartition=false
-system_as_root=`getprop ro.build.system_root_image`
-if [ "$system_as_root" == "true" ]; then
-  ui_print "- Device is system-as-root"
-  active_slot=`getprop ro.boot.slot_suffix`
-  if [ ! -z "$active_slot" ]; then
-    device_abpartition=true
-    block=/dev/block/bootdevice/by-name/system$active_slot
-  fi
-  mk_system_root;
-  SYSTEM_MOUNT=/system_root
-  SYSTEM=$SYSTEM_MOUNT/system
+
+# Get system mount block from /etc/fstab
+SYSTEM_BLOCK=$(grep system /etc/fstab | grep -o "/dev/[^ ]*" | grep -o "/dev/[^_]*")
+
+# Check for active slot
+SLOT=$(getprop ro.boot.slot_suffix)
+
+# Check for System-As-Root
+SAR=$(getprop ro.build.system_root_image)
+
+# Mount system
+if [ "$SAR" == "true" ]; then
+	ui_print "- Device is system-as-root"
+	if [ ! -z "$SLOT" ]; then
+		device_abpartition=true
+		ui_print "- Slot device"
+		mk_system_root;
+		ui_print "- Mounting system$SLOT"
+		mount -o rw "$SYSTEM_BLOCK$SLOT" /system_root
+		SYSTEM_MOUNT=/system_root
+		SYSTEM=$SYSTEM_MOUNT/system
+	else
+		device_abpartition=false
+		mk_system_root;
+		ui_print "- Mounting system"
+		mount -o rw "$SYSTEM_BLOCK" /system_root
+		SYSTEM_MOUNT=/system_root
+		SYSTEM=$SYSTEM_MOUNT/system
+	fi
 else
-  SYSTEM_MOUNT=/system
-  SYSTEM=$SYSTEM_MOUNT
+	device_abpartition=false
+	ui_print "- Mounting system"
+	mount -o rw "$SYSTEM_BLOCK" /system
+	if [ -f /system/init.rc ]; then
+		ui_print "- Device is system-as-root"
+		ui_print "- Remounting system to system_root"
+		umount system
+		mk_system_root;
+		mount -o rw "$SYSTEM_BLOCK" /system_root
+		SYSTEM_MOUNT=/system_root
+		SYSTEM=$SYSTEM_MOUNT/system
+	else
+		SYSTEM_MOUNT=/system
+		SYSTEM=$SYSTEM_MOUNT
+	fi
 fi
 
-# Mount whatever $SYSTEM_MOUNT is, sometimes remount is necessary if mounted read-only
-ui_print "- Mounting /system RW";
-grep -q "/system.*ro[\s,]" /proc/mounts && mount -o remount,rw $SYSTEM_MOUNT || mount -o rw "$block" $SYSTEM_MOUNT
+# Add SYSTEM_MOUNT to mounts
+mounts="$mounts $SYSTEM_MOUNT"
 
-# Remount /system to /system_root if we have system-as-root and bind /system to /system_root/system (like Magisk does)
-# For reference, check https://github.com/topjohnwu/Magisk/blob/master/scripts/util_functions.sh
-if [ -f $SYSTEM/init.rc ]; then
-  ui_print "- Device is system-as-root"
-  ui_print "- Remounting /system as /system_root";
-  mk_system_root;
-  mount --move /system /system_root
-  mount -o bind /system_root/system /system
-  SYSTEM_MOUNT=/system_root
-  SYSTEM=/system
-  mounts="$mounts /system $SYSTEM_MOUNT"
-else
-  # Just add $SYSTEM_MOUNT to the mount list
-  mounts="$mounts $SYSTEM_MOUNT"
-fi
 ui_print " ";
 
 # _____________________________________________________________________________________________________________________
