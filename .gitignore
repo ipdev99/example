@@ -1,0 +1,13 @@
+# ignore out directory
+out/*
+
+# ignore xfiles
+xfiles/*
+
+# ignore mtg
+mtg*
+mtg/*
+
+# ignore og
+og*
+og/*
