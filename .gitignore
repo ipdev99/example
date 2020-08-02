@@ -11,3 +11,7 @@ mtg/*
 # ignore og
 og*
 og/*
+
+# ignore gfi
+gfi*
+gfi/*
