@@ -8,9 +8,61 @@ echo $(date +%c) >> $LOGFILE
 # Magisk Module Installer variable
 REPLACE=""
 
-# Stock app names for debloating - add/remove app names you want to debloat
-for X in AnalyticsCore BasicDreams BookmarkProvider Calculator CatchLog EasterEgg facebook-appmanager FileExplorer_old HybridAccessory HybridPlatform IdMipay InMipay Joyose Lens MiPicks MiuiBugReport MiuiDaemon MiWallpaper MSA-Global Netflix_activation PartnerBookmarksProvider PaymentService Stk TouchAssistant Traceur Zman MiCreditInStub facebook-installer facebook-services GameCenterGlobal GlobalMinusScreen MiBrowserGlobal MiDrop MiRcs MiRecycle MiService MiuiBrowserGlobal YellowPage Chrome Gmail2 PhotoTable AndroidAutoStub GoogleFeedback GooglePartnerSetup Turbo Wellbeing SoterService GlobalFashiongallery MiBrowserGlobalVendor wps_lite 
-do
+# Stock app names for debloating - add/remove app names you want to debloat.
+RemoveList='AnalyticsCore
+AndroidAutoStub
+BasicDreams
+BookmarkProvider
+Calculator CatchLog
+Chrome
+EasterEgg
+facebook-appmanager
+facebook-installer
+facebook-services
+FileExplorer_old
+GameCenterGlobal
+GlobalFashiongallery
+GlobalMinusScreen
+Gmail2
+GoogleFeedback
+GooglePartnerSetup
+HybridAccessory
+HybridPlatform
+IdMipay
+InMipay
+Joyose
+Lens
+lite
+MiBrowserGlobal
+MiBrowserGlobalVendor
+MiCreditInStub
+MiDrop
+MiPicks
+MiRcs
+MiRecycle
+MiService
+MiuiBrowserGlobal
+MiuiBugReport
+MiuiDaemon
+MiWallpaper
+MSA-Global
+Netflix_activation
+PartnerBookmarksProvider
+PaymentService
+PhotoTable
+SoterService
+Stk
+TouchAssistant
+Traceur
+Turbo
+Wellbeing
+wps
+YellowPage
+YouTube
+Zman'
+
+# Systemless deblote.
+for X in $RemoveList; do
 	z=""; Z=""
 	# Search for the system application path
 	for x in $X.apk .replace
