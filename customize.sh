@@ -26,7 +26,7 @@ do
 				do
 					if [ -z "$z" ]
 					then
-						z=$(readlink -f $w/$y)					
+						z=$(readlink -f $w/$y)
 					fi
 				done
 			fi
