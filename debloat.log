@@ -1,0 +1,58 @@
+update-binary - debloat
+Mon Oct 19 23:52:01 2020
+DebloatListFile="/storage/emulated/0/Download/debloat-list.sh"
+DebloatList="AnalyticsCore AndroidAutoStub BasicDreams BookmarkProvider Calculator CatchLog Chrome EasterEgg facebook-appmanager facebook-installer facebook-services FileExplorer_old GameCenterGlobal GlobalFashiongallery GlobalMinusScreen Gmail2 GoogleFeedback GooglePartnerSetup HybridAccessory HybridPlatform IdMipay InMipay Joyose Lens lite MiBrowserGlobal MiBrowserGlobalVendor MiCreditInStub MiDrop MiPicks MiRcs MiRecycle MiService MiuiBrowserGlobal MiuiBugReport MiuiDaemon MiWallpaper MSA-Global Netflix_activation PartnerBookmarksProvider PaymentService PhotoTable SoterService Stk TouchAssistant Traceur Turbo Velvet Wellbeing wps YellowPage YouTube Zman"
+AnalyticsCore --- app not found
+/system/product/priv-app/AndroidAutoStub
+/system/app/BasicDreams
+/system/app/BookmarkProvider
+/system/app/Calculator
+CatchLog --- app not found
+/system/product/app/Chrome
+EasterEgg --- app not found
+facebook-appmanager --- app not found
+facebook-installer --- app not found
+facebook-services --- app not found
+FileExplorer_old --- app not found
+GameCenterGlobal --- app not found
+GlobalFashiongallery --- app not found
+GlobalMinusScreen --- app not found
+/system/product/app/Gmail2
+/system/product/priv-app/GoogleFeedback
+/system/product/priv-app/GooglePartnerSetup
+HybridAccessory --- app not found
+HybridPlatform --- app not found
+IdMipay --- app not found
+InMipay --- app not found
+Joyose --- app not found
+Lens --- app not found
+lite --- app not found
+MiBrowserGlobal --- app not found
+MiBrowserGlobalVendor --- app not found
+MiCreditInStub --- app not found
+MiDrop --- app not found
+MiPicks --- app not found
+MiRcs --- app not found
+MiRecycle --- app not found
+MiService --- app not found
+MiuiBrowserGlobal --- app not found
+MiuiBugReport --- app not found
+MiuiDaemon --- app not found
+MiWallpaper --- app not found
+MSA-Global --- app not found
+Netflix_activation --- app not found
+/system/app/PartnerBookmarksProvider
+PaymentService --- app not found
+PhotoTable --- app not found
+/system/app/SoterService
+/system/app/Stk
+TouchAssistant --- app not found
+/system/app/Traceur
+/system/product/priv-app/Turbo
+/system/product/priv-app/Velvet
+/system/product/priv-app/Wellbeing
+wps --- app not found
+YellowPage --- app not found
+/system/product/app/YouTube
+Zman --- app not found
+REPLACE="/system/product/priv-app/AndroidAutoStub /system/app/BasicDreams /system/app/BookmarkProvider /system/app/Calculator /system/product/app/Chrome /system/product/app/Gmail2 /system/product/priv-app/GoogleFeedback /system/product/priv-app/GooglePartnerSetup /system/app/PartnerBookmarksProvider /system/app/SoterService /system/app/Stk /system/app/Traceur /system/product/priv-app/Turbo /system/product/priv-app/Velvet /system/product/priv-app/Wellbeing /system/product/app/YouTube "

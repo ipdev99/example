@@ -1,0 +1,327 @@
+ls -laZ /
+total 152
+drwxr-xr-x  20 root   root   u:object_r:rootfs:s0            4096 2008-12-31 18:00 .
+drwxr-xr-x  20 root   root   u:object_r:rootfs:s0            4096 2008-12-31 18:00 ..
+dr-xr-xr-x  95 root   root   u:object_r:cgroup:s0               0 1971-05-31 17:12 acct
+drwxr-xr-x  14 root   root   u:object_r:apex_mnt_dir:s0       280 1971-05-31 17:13 apex
+lrw-r--r--   1 root   root   u:object_r:rootfs:s0              11 2008-12-31 18:00 bin -> /system/bin
+lrw-r--r--   1 root   root   u:object_r:bt_firmware_file:s0    19 2008-12-31 18:00 bt_firmware -> /vendor/bt_firmware
+lrw-r--r--   1 root   root   u:object_r:rootfs:s0              50 2008-12-31 18:00 bugreports -> /data/user_de/0/com.android.shell/files/bugreports
+drwxrwx---   8 system cache  u:object_r:cache_file:s0        4096 1971-05-31 17:13 cache
+lrw-r--r--   1 root   root   u:object_r:rootfs:s0              19 2008-12-31 18:00 charger -> /system/bin/charger
+lrw-r--r--   1 root   root   u:object_r:rootfs:s0              17 2008-12-31 18:00 charger_log -> /sbin/charger_log
+drwxr-xr-x   4 root   root   u:object_r:configfs:s0             0 1969-12-31 18:00 config
+lrw-r--r--   1 root   root   u:object_r:rootfs:s0              17 2008-12-31 18:00 d -> /sys/kernel/debug
+drwxrwx--x  56 system system u:object_r:system_data_file:s0  4096 2020-10-19 19:52 data
+drwxr-xr-x   2 root   root   u:object_r:tmpfs:s0             4096 2008-12-31 18:00 debug_ramdisk
+lrw-------   1 root   root   u:object_r:rootfs:s0              23 2008-12-31 18:00 default.prop -> system/etc/prop.default
+drwxr-xr-x  18 root   root   u:object_r:device:s0            4580 2020-10-19 20:18 dev
+lrw-r--r--   1 root   root   u:object_r:adsprpcd_file:s0       11 2008-12-31 18:00 dsp -> /vendor/dsp
+lrw-r--r--   1 root   root   u:object_r:rootfs:s0              11 2008-12-31 18:00 etc -> /system/etc
+lrw-r--r--   1 root   root   u:object_r:firmware_file:s0       20 2008-12-31 18:00 firmware -> /vendor/firmware_mnt
+lrwxr-x---   1 root   shell  u:object_r:init_exec:s0           16 2008-12-31 18:00 init -> /system/bin/init
+-rwxr-x---   1 root   shell  u:object_r:rootfs:s0            2453 2008-12-31 18:00 init.environ.rc
+-rwxr-x---   1 root   shell  u:object_r:rootfs:s0            1944 2008-12-31 18:00 init.oem_ftm.rc
+-rwxr-x---   1 root   shell  u:object_r:rootfs:s0           35390 2008-12-31 18:00 init.rc
+-rwxr-x---   1 root   shell  u:object_r:rootfs:s0            3171 2008-12-31 18:00 init.recovery.qcom.rc
+-rwxr-x---   1 root   shell  u:object_r:rootfs:s0            9570 2008-12-31 18:00 init.usb.configfs.rc
+-rwxr-x---   1 root   shell  u:object_r:rootfs:s0            6271 2008-12-31 18:00 init.usb.rc
+-rwxr-x---   1 root   shell  u:object_r:rootfs:s0             611 2008-12-31 18:00 init.zygote32.rc
+-rwxr-x---   1 root   shell  u:object_r:rootfs:s0            1029 2008-12-31 18:00 init.zygote64_32.rc
+drwx------   2 root   root   u:object_r:rootfs:s0           16384 2008-12-31 18:00 lost+found
+drwxr-xr-x  12 root   system u:object_r:tmpfs:s0              260 1971-05-31 17:12 mnt
+drwxr-xr-x   2 root   root   u:object_r:vendor_file:s0       4096 2008-12-31 18:00 odm
+drwxr-xr-x   2 root   root   u:object_r:oemfs:s0             4096 2008-12-31 18:00 oem
+lrw-r--r--   1 root   root   u:object_r:mnt_vendor_file:s0     19 2008-12-31 18:00 persist -> /mnt/vendor/persist
+dr-xr-xr-x 813 root   root   u:object_r:proc:s0                 0 1969-12-31 18:00 proc
+lrw-r--r--   1 root   root   u:object_r:system_file:s0         15 2008-12-31 18:00 product -> /system/product
+lrw-r--r--   1 root   root   u:object_r:system_file:s0         24 2008-12-31 18:00 product_services -> /system/product_services
+drwxr-xr-x   3 root   root   u:object_r:rootfs:s0            4096 2008-12-31 18:00 res
+drwxr-xr-x   3 root   root   u:object_r:rootfs:s0             240 1971-05-31 17:12 sbin
+lrw-r--r--   1 root   root   u:object_r:rootfs:s0              21 2008-12-31 18:00 sdcard -> /storage/self/primary
+drwxr-xr-x   4 root   root   u:object_r:storage_file:s0        80 2020-10-19 20:18 storage
+dr-xr-xr-x  14 root   root   u:object_r:sysfs:s0                0 1971-05-31 17:12 sys
+drwxr-xr-x  17 root   root   u:object_r:system_file:s0       4096 2008-12-31 18:00 system
+-rw-r--r--   1 root   root   u:object_r:rootfs:s0            6865 2008-12-31 18:00 ueventd.rc
+drwxr-xr-x  18 root   shell  u:object_r:vendor_file:s0       4096 2008-12-31 18:00 vendor
+-rw-r--r--   1 root   root   u:object_r:rootfs:s0             524 2008-12-31 18:00 verity_key
+ls -laZ /system/
+total 9212
+drwxr-xr-x 17 root root  u:object_r:system_file:s0        4096 2008-12-31 18:00 .
+drwxr-xr-x 20 root root  u:object_r:rootfs:s0             4096 2008-12-31 18:00 ..
+drwxr-xr-x  8 root root  u:object_r:system_file:s0        4096 2008-12-31 18:00 apex
+drwxr-xr-x 73 root root  u:object_r:system_file:s0        4096 2008-12-31 18:00 app
+drwxr-x--x  4 root shell u:object_r:system_file:s0        8140 1971-05-31 17:13 bin
+drwxr-xr-x  2 root root  u:object_r:system_file:s0        4096 2008-12-31 18:00 bpm
+-rw-------  1 root root  u:object_r:system_file:s0       11636 2008-12-31 18:00 build.prop
+drwxr-xr-x 20 root root  u:object_r:system_file:s0        1420 1971-05-31 17:13 etc
+drwxr-xr-x  2 root root  u:object_r:system_file:s0       12288 2008-12-31 18:00 fonts
+drwxr-xr-x  2 root root  u:object_r:system_file:s0        4096 2008-12-31 18:00 framework
+drwxr-xr-x 11 root root  u:object_r:system_lib_file:s0   16384 2008-12-31 18:00 lib
+drwxr-xr-x  9 root root  u:object_r:system_lib_file:s0   20480 2008-12-31 18:00 lib64
+drwxr-xr-x  3 root root  u:object_r:system_file:s0        4096 2008-12-31 18:00 media
+drwxr-xr-x 62 root root  u:object_r:system_file:s0        4096 2008-12-31 18:00 priv-app
+drwxr-xr-x 12 root root  u:object_r:system_file:s0        4096 2008-12-31 18:00 product
+-rw-r--r--  1 root root  u:object_r:system_file:s0     9321464 2008-12-31 18:00 recovery-from-boot.p
+drwxr-xr-x 12 root root  u:object_r:system_file:s0        4096 2008-12-31 18:00 reserve
+drwxr-xr-x  7 root root  u:object_r:system_file:s0        4096 2008-12-31 18:00 usr
+lrw-r--r--  1 root root  u:object_r:vendor_file:s0           7 2008-12-31 18:00 vendor -> /vendor
+drwxr-x--x  2 root shell u:object_r:system_file:s0        7320 1971-05-31 17:13 xbin
+ls -laZ /system/app/
+total 292
+drwxr-xr-x 73 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 .
+drwxr-xr-x 17 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 ..
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 ARCore_stub
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 AntHalService
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 BTtestmode
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 BackupRestoreRemoteService
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 BasicDreams
+drwxr-xr-x  3 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 Bluetooth
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 BluetoothExt
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 BluetoothMidiService
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 BookmarkProvider
+drwxr-xr-x  3 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 BuiltInPrintService
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 Calculator
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 CarrierDefaultApp
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 CertInstaller
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 CompanionDeviceManager
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 CtsShimPrebuilt
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 DeskClock
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 EasterEgg_O2
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 EngSpecialTest
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 EngineeringMode
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 GoogleExtShared
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 GooglePay
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 GooglePrintRecommendationService
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 HTMLViewer
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 KeyChain
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 LiveWallpapersPicker
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 LogKitSdService
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 NFCTestMode
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 NVBackupUI
+drwxr-xr-x  3 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 NxpNfcNci
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 NxpSecureElement
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 OEMLogKit
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 OPAppUpgrader
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 OPBackup
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 OPBreathMode
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 OPBugReportLite
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 OPCommonLogTool
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 OPFilemanager
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 OPGamingSpace
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 OPGeoIpTime
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 OPLiveWallpaper
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 OPLongshot
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 OPOnlineConfig
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 OPPush
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 OPSafe
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 OPScreenRecord
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 OPSesAuthentication
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 OPTelephonyDiagnoseManager
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 OPTelephonyOptimization
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 OPWallpaperResources
+drwxr-xr-x  3 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 OPYellowpage
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 OnePlusWizard
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 OsuLogin
+drwxr-xr-x  3 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 PacProcessor
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 PartnerBookmarksProvider
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 PhotosOnline
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 PlatformCaptivePortalLogin
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 PlayAutoInstallConfig
+drwxr-xr-x  3 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 PrintSpooler
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 QTIDiagServices
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 SdCardService
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 SensorTestTool
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 SimAppDialog
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 SimContact
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 SmscPlugger
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 SoterService
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 Stk
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 Traceur
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 WAPPushManager
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 WallpaperBackup
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 WapiCertManage
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 workloadclassifier
+ls -laZ /system/priv-app/
+total 248
+drwxr-xr-x 62 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 .
+drwxr-xr-x 17 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 ..
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 BackupRestoreConfirmation
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 BlockedNumberProvider
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 CalendarProvider
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 CallLogBackup
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 Contacts
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 ContactsProvider
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 CtsShimPrivPrebuilt
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 Dialer
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 DiracAudioControlService
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 DiracManager
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 DownloadProvider
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 DownloadProviderUi
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 DynamicSystemInstallationService
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 EmergencyInfo
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 ExternalStorageProvider
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 FusedLocation
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 GoogleDocumentsUIPrebuilt
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 GoogleExtServicesPrebuilt
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 GooglePackageInstaller
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 GooglePermissionControllerPrebuilt
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 IFAAService
+drwxr-xr-x  3 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 InProcessNetworkStack
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 InputDevices
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 LocalTransport
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 ManagedProvisioning
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 MediaProvider
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 MmsService
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 MtpDocumentsProvider
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 ONS
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 OPAod
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 OPAppCategoryProvider
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 OPCellBroadcastReceiver
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 OPCoreService
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 OPDeviceManager
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 OPDeviceManagerProvider
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 OPFaceUnlock
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 OPLauncher2
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 OPMms
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 OPNetworkSetting
+drwxr-xr-x  3 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 OPRoamingServiceRelease
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 OPSettingsProvider
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 OPSimContacts
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 OPWifiApSettings
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 OnePlusCamera
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 OnePlusCameraService
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 OnePlusGallery
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 PlatformNetworkPermissionConfig
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 ProxyHandler
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 SharedStorageBackup
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 Shell
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 StatementService
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 TagGoogle
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 TeleService
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 Telecom
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 TelephonyProvider
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 UserDictionaryProvider
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 VpnDialogs
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 WfdService
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 com.qualcomm.location
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 oneplus-framework-res
+ls -laZ /vendor/
+total 188
+drwxr-xr-x 18 root      shell  u:object_r:vendor_file:s0            4096 2008-12-31 18:00 .
+drwxr-xr-x 20 root      root   u:object_r:rootfs:s0                 4096 2008-12-31 18:00 ..
+drwxr-xr-x 11 root      shell  u:object_r:vendor_app_file:s0        4096 2008-12-31 18:00 app
+drwxr-xr-x  4 root      shell  u:object_r:vendor_file:s0            8192 2008-12-31 18:00 bin
+dr-xr-x---  3 bluetooth net_bt u:object_r:bt_firmware_file:s0      16384 1969-12-31 18:00 bt_firmware
+-rw-------  1 root      root   u:object_r:vendor_file:s0            6701 2008-12-31 18:00 build.prop
+-rw-------  1 root      root   u:object_r:vendor_file:s0             463 2008-12-31 18:00 default.prop
+drwxr-xr-x  3 root      root   u:object_r:adsprpcd_file:s0          4096 1969-12-31 18:00 dsp
+drwxr-xr-x 22 root      shell  u:object_r:vendor_configs_file:s0    4096 2008-12-31 18:00 etc
+drwxr-xr-x  3 root      shell  u:object_r:vendor_firmware_file:s0   4096 2008-12-31 18:00 firmware
+dr-xr-x---  4 system    system u:object_r:firmware_file:s0         16384 1969-12-31 18:00 firmware_mnt
+drwxr-xr-x  2 root      shell  u:object_r:vendor_framework_file:s0  4096 2008-12-31 18:00 framework
+drwxr-xr-x 11 root      shell  u:object_r:vendor_file:s0           28672 2008-12-31 18:00 lib
+drwxr-xr-x  7 root      shell  u:object_r:vendor_file:s0           16384 2008-12-31 18:00 lib64
+drwx------  2 root      root   u:object_r:vendor_file:s0           16384 2008-12-31 18:00 lost+found
+drwxr-xr-x  3 root      shell  u:object_r:vendor_file:s0            4096 2008-12-31 18:00 odm
+drwxr-xr-x 67 root      shell  u:object_r:vendor_overlay_file:s0    4096 2008-12-31 18:00 overlay
+drwxr-xr-x  3 root      shell  u:object_r:vendor_file:s0            4096 2008-12-31 18:00 radio
+drwxr-xr-x  5 root      shell  u:object_r:vendor_file:s0            4096 2008-12-31 18:00 rfs
+-rw-r--r--  1 root      root   u:object_r:vendor_file:s0           20851 2008-12-31 18:00 ueventd.rc
+drwxr-xr-x  2 root      shell  u:object_r:vendor_file:s0            4096 2008-12-31 18:00 xbin
+ls -laZ /vendor/app/
+total 44
+drwxr-xr-x 11 root shell u:object_r:vendor_app_file:s0 4096 2008-12-31 18:00 .
+drwxr-xr-x 18 root shell u:object_r:vendor_file:s0     4096 2008-12-31 18:00 ..
+drwxr-xr-x  2 root shell u:object_r:vendor_app_file:s0 4096 2008-12-31 18:00 CACertService
+drwxr-xr-x  2 root shell u:object_r:vendor_app_file:s0 4096 2008-12-31 18:00 CneApp
+drwxr-xr-x  2 root shell u:object_r:vendor_app_file:s0 4096 2008-12-31 18:00 ConnectionSecurityService
+drwxr-xr-x  2 root shell u:object_r:vendor_app_file:s0 4096 2008-12-31 18:00 IWlanService
+drwxr-xr-x  3 root shell u:object_r:vendor_app_file:s0 4096 2008-12-31 18:00 QDMA
+drwxr-xr-x  3 root shell u:object_r:vendor_app_file:s0 4096 2008-12-31 18:00 QDMA-UI
+drwxr-xr-x  2 root shell u:object_r:vendor_app_file:s0 4096 2008-12-31 18:00 SSGTelemetryService
+drwxr-xr-x  2 root shell u:object_r:vendor_app_file:s0 4096 2008-12-31 18:00 TimeService
+drwxr-xr-x  2 root shell u:object_r:vendor_app_file:s0 4096 2008-12-31 18:00 TrustZoneAccessService
+ls -laZ /product/
+total 60
+drwxr-xr-x 12 root root  u:object_r:system_file:s0         4096 2008-12-31 18:00 .
+drwxr-xr-x 17 root root  u:object_r:system_file:s0         4096 2008-12-31 18:00 ..
+drwxr-xr-x 37 root root  u:object_r:system_file:s0         4096 2008-12-31 18:00 app
+drwxr-x--x  2 root shell u:object_r:system_file:s0         4096 2008-12-31 18:00 bin
+-rw-------  1 root root  u:object_r:system_file:s0          202 2008-12-31 18:00 build.prop
+drwxr-xr-x  9 root root  u:object_r:system_file:s0         4096 2008-12-31 18:00 etc
+drwxr-xr-x  2 root root  u:object_r:system_file:s0         4096 2008-12-31 18:00 framework
+drwxr-xr-x  2 root root  u:object_r:system_lib_file:s0     8192 2008-12-31 18:00 lib
+drwxr-xr-x  2 root root  u:object_r:system_lib_file:s0     8192 2008-12-31 18:00 lib64
+drwxr-xr-x  3 root root  u:object_r:system_file:s0         4096 2008-12-31 18:00 media
+drwxr-xr-x 37 root root  u:object_r:vendor_overlay_file:s0 4096 2008-12-31 18:00 overlay
+drwxr-xr-x 26 root root  u:object_r:system_file:s0         4096 2008-12-31 18:00 priv-app
+drwxr-xr-x  3 root root  u:object_r:system_file:s0         4096 2008-12-31 18:00 usr
+ls -laZ /product/app/
+total 148
+drwxr-xr-x 37 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 .
+drwxr-xr-x 12 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 ..
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 Account
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 CalendarGoogle
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 CallFeaturesSetting
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 Chrome
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 ConfURIDialer
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 DeviceInfo
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 Drive
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 Duo
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 Gmail2
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 GoogleContactsSyncAdapter
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 GoogleLocationHistory
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 GoogleTTS
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 LatinImeGoogle
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 Maps
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 ModuleMetadataGooglePrebuilt
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 Music2
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 Photos
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 PowerOffAlarm
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 QtiSystemService
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 QtiTelephonyService
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 SimSettings
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 TmoEngMode
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 TrichromeLibrary
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 Videos
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 WebViewGoogle
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 YouTube
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 colorservice
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 com.qualcomm.qti.services.secureui
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 datastatusnotification
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 imssettings
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 remoteSimLockAuthentication
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 talkback
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 uceShimService
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 uimremoteclient
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 uimremoteserver
+ls -laZ /product/priv-app/
+total 104
+drwxr-xr-x 26 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 .
+drwxr-xr-x 12 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 ..
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 AndroidAutoStub
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 CarrierConfig
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 ConfigUpdater
+drwxr-xr-x  3 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 GmsCore
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 GoogleFeedback
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 GoogleOneTimeInitializer
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 GooglePartnerSetup
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 GoogleRestore
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 GoogleServicesFramework
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 OPAppLocker
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 OPSystemUI
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 Phonesky
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 Settings
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 SettingsIntelligence
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 SetupWizard
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 StorageManager
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 Turbo
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 Velvet
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 WallpaperCropper
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 Wellbeing
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 dpmserviceapp
+drwxr-xr-x  3 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 ims
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 qcrilmsgtunnel
+drwxr-xr-x  2 root root u:object_r:system_file:s0 4096 2008-12-31 18:00 seccamservice
+ls -laZ /data/app/
