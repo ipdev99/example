@@ -3,22 +3,21 @@ while [ "$(getprop sys.boot_completed)" != 1 ];
 do sleep 1;
 done;
 
-# Get YouTube path = Android 11
-YTPATH=$(readlink -f /data/app/*/com.google.android.youtube*/oat | sed 's/\/oat//g')
+# Get SDK level.
+SDK=$(getprop ro.build.version.sdk);
 
-# Check if path exists
-if [ ! -z "$YTPATH" ]
-then
-	# Swap stock YouTube with Vanced YouTube.
-	su -c mount $MODDIR/base.apk $YTPATH/base.apk
+# Find and set YouTube path.
+if [ $SDK -ge 30 ]; then
+	YTPATH=$(readlink -f /data/app/*/com.google.android.youtube*/lib | sed 's/\/lib//g');
 else
-	# Get YouTube path < Android 11
-	YTPATH=$(readlink -f /data/app/com.google.android.youtube*/oat | sed 's/\/oat//g')
-	
-	# Check if path exists
-	if [ ! -z "$YTPATH" ]
-	then
-		# Swap stock YouTube with Vanced YouTube.
-		su -c mount $MODDIR/base.apk $YTPATH/base.apk
-	fi
-fi
+	YTPATH=$(readlink -f /data/app/com.google.android.youtube*/lib | sed 's/\/lib//g');
+fi;
+
+# Check and swap stock YouTube with Vanced YouTube.
+if [ -n $YTPATH ]; then
+	if [ $SDK -ge 25 ]; then
+		su -c mount $MODDIR/base.apk $YTPATH/base.apk;
+	else
+		su -c mount -o bind $MODDIR/base.apk $YTPATH/base.apk;
+	fi;
+fi;
