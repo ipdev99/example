@@ -1,8 +1,3 @@
-# Wait untill boot is compleate before moving on.
-while [ "$(getprop sys.boot_completed)" != 1 ];
-do sleep 1;
-done;
-
 # Get SDK level.
 SDK=$(getprop ro.build.version.sdk);
 
@@ -13,8 +8,16 @@ else
 	YTPATH=$(readlink -f /data/app/com.google.android.youtube*/lib | sed 's/\/lib//g');
 fi;
 
-# Check and swap stock YouTube with Vanced YouTube.
+# Find installed (active) YouTube versionCode.
 if [ -n $YTPATH ]; then
+	while [ -z $YTVCODE ]; do
+		YTVCODE=$(dumpsys package com.google.android.youtube | grep versionCode | cut -f2 -d'=' | tr -d '\n' | cut -f1 -d' ');
+		sleep 1;
+	done;
+fi;
+
+# Check and swap stock YouTube with Vanced YouTube.
+if [ -n $YTVCODE ]; then
 	if [ $SDK -ge 25 ]; then
 		su -c mount $MODDIR/base.apk $YTPATH/base.apk;
 	else
