@@ -1,0 +1,36 @@
+####################################
+# from generate-common-build-props
+# These properties identify this partition image.
+####################################
+ro.product.odm.brand=Xiaomi
+ro.product.odm.device=beryllium
+ro.product.odm.manufacturer=Xiaomi
+ro.product.odm.model=POCO F1
+ro.product.odm.name=aosp_beryllium
+ro.odm.product.cpu.abilist=arm64-v8a,armeabi-v7a,armeabi
+ro.odm.product.cpu.abilist32=armeabi-v7a,armeabi
+ro.odm.product.cpu.abilist64=arm64-v8a
+ro.odm.build.date=Sat Oct  9 07:48:17 UTC 2021
+ro.odm.build.date.utc=1633765697
+ro.odm.build.fingerprint=google/redfin/redfin:11/RQ3A.210905.001/7511028:user/release-keys
+ro.odm.build.id=SP1A.210812.016
+ro.odm.build.tags=test-keys
+ro.odm.build.type=userdebug
+ro.odm.build.version.incremental=eng.androi.20211009.075016
+ro.odm.build.version.release=12
+ro.odm.build.version.release_or_codename=12
+ro.odm.build.version.sdk=31
+####################################
+# from device/xiaomi/sdm845-common/odm.prop
+####################################
+# QC framework value-adds
+ro.vendor.qti.va_odm.support=1
+####################################
+# from variable ADDITIONAL_ODM_PROPERTIES
+####################################
+####################################
+# from variable PRODUCT_ODM_PROPERTIES
+####################################
+# Auto-added by post_process_props.py
+persist.sys.usb.config=none
+# end of file
