@@ -1,17 +1,39 @@
-# ignore out directory
-out/*
+# Intermediate application files
+*.ap_
 
-# ignore xfiles
+# Files for the Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Generated files
+cache/
+build/
+log/
+out/
+
+# Local configuration file (sdk path, etc)
+local.properties
+.vscode
+.DS_Store
+
+# Log Files
+*.log
+
+#Temporary editor files
+*.bak
+*~
+
+#APKs in the non-sources opengapps repository
+*.apk
+#APKs that are marked as potentially dangerous
+*.err
+
+# Other.
+mk_*
+x_*
 xfiles/*
-
-# ignore mtg
-mtg*
-mtg/*
-
-# ignore og
-og*
-og/*
-
-# ignore gfi
-gfi*
-gfi/*
+git_*
+*
+*/*
