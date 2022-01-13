@@ -9,7 +9,7 @@
 #
 # Copy this script to the device.
 # Run from adb shell (or a terminal app) using the sh command.
-#  sh mHideGP.sh
+#  sh list_mModules.sh
 # Run from a file manager that is able to execute a script file.
 #  Note: May or may not work depending on file manager..
 
