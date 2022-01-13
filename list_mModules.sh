@@ -70,11 +70,6 @@ set_target_directory;
 # # Determine if Magisk is installed and running.
 # check_magisk_ver;
 
-# for i in $(find /data/adb/modules/ -mindepth 1 -name 'module.prop'); do echo $i | sed 's/module.prop//g'; cat $i; echo ""; done; 
-# for i in $(find /data/adb/modules/ -mindepth 1 -name 'module.prop'); do mPath=$(printf $i | sed 's/module.prop//g'); echo $mPath; cat $i; echo ""; done;
-# for i in $(find /data/adb/modules/ -mindepth 1 -name 'module.prop'); do mPath=$(printf $i | sed 's/module.prop//g'); [ -f "$mPath""disable" ] && echo " ## This module is disabled. "; cat $i; echo ""; done;
-# for i in $(find /data/adb/modules/ -mindepth 1 -name 'module.prop'); do mPath=$(printf $i | sed 's/module.prop//g'); [ -f "$mPath""disable" ] && ii=$(cat $i | grep id= | cut -f2 -d'=') && echo " ## "$ii" module is disabled. "; cat $i; echo ""; done;
-
 # Cat each module prop file.
 for i in $(find /data/adb/modules/ -mindepth 1 -name 'module.prop'); do
     mPath=$(printf $i | sed 's/module.prop//g')
