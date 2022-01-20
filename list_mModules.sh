@@ -10,7 +10,7 @@
 # Copy this script to the device.
 # Run from adb shell (or a terminal app) using the sh command.
 #  sh list_mModules.sh
-# Run from a file manager that is able to execute a script file.
+# Run from a file manager that is able to execute a script file (as root).
 #  Note: May or may not work depending on file manager..
 
 
@@ -64,8 +64,7 @@ check_modules() {
         echo ""; echo " No Magisk modules installed."; echo ""
         exit 0
     else
-        echo "List of installed Magisk modules." > $OUT
-        echo " "$(date '+%Y %B %d') >> $OUT
+        echo "List of installed Magisk modules as of "$(date '+%d %B %Y') > $OUT
         echo " Current Magisk is "$(magisk -c) >> $OUT
         echo "" >> $OUT
     fi
@@ -98,32 +97,33 @@ check_magisk_ver
 # Check if Magisk modules are installed. Exit or start the list file.
 check_modules
 
-# # Cat each module prop file.
-# for i in $(find /data/adb/modules/ -mindepth 1 -name 'module.prop'); do
-#     mPath=$(printf $i | sed 's/module.prop//g');
-#     # [ -f "$mPath""disable" ] && echo " ## This module is disabled. ";
-#     if [ -f "$mPath""disable" ]; then
-#         ii=$(cat $i | grep id= | cut -f2 -d'=');
-#         echo " ## "$ii" module is disabled." >>$OUT;
-#     fi;
-#     cat $i >> $OUT;
-#     echo "" >> $OUT;
-# done;
+# Find installed Magisk modules.
+## Note: To list the modules alphabetically.
+##  We copy the module prop file and name it the same as the module.
+##  Then use the renamed module prop files to add the module info to the list and then delete the renamed prop file.
+
+for i in /data/adb/modules/*/; do
+    if [ -f "$i""disable" ]; then
+        cp "$i""module.prop" "$TDIR"/"$(grep name= "$i""module.prop" | cut -f2 -d "=" | sed 's/ /_/g' | tr [:upper:] [:lower:])".mList.disabled
+    else
+        cp "$i""module.prop" "$TDIR"/"$(grep name= "$i""module.prop" | cut -f2 -d "=" | sed 's/ /_/g' | tr [:upper:] [:lower:])".mList.enabled
+    fi
+done
 
 # Add enabled Magisk modules to the list.
-for i in $(find /data/adb/modules/ -mindepth 1 -name 'module.prop'); do
-    ii=$(printf $i | sed 's/module.prop//g')
-    [ ! -f "$ii""disable" ] && get_module_prop
+for i in *.mList.enabled; do
+    get_module_prop
+    rm "$i"
 done
 
 # Add disabled Magisk modules to the list.
-if [ ! -z "$(find /data/adb/modules/ -mindepth 1 -name 'disable')" ]; then
+if [ "$(find *.mList.disabled)" ]; then
     echo "" >> $OUT
     echo " Disabled modules." >> $OUT
     echo "" >> $OUT
-    for i in $(find /data/adb/modules/ -mindepth 1 -name 'module.prop'); do
-        ii=$(printf $i | sed 's/module.prop//g')
-        [ -f "$ii""disable" ] && get_module_prop
+    for i in *.mList.disabled; do
+        get_module_prop
+        rm $i
     done
 fi
 
