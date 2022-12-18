@@ -24,4 +24,6 @@ sleep 5
 fastboot flash radio radio-panther-g5300g-220923-221028-b-9229469.img
 fastboot reboot-bootloader
 sleep 5
-fastboot -w update image-panther-tq1a.221205.011.zip
+# fastboot -w update image-panther-tq1a.221205.011.zip
+fastboot --skip-reboot update image-panther-tq1a.221205.011.zip
+fastboot reboot-bootloader
