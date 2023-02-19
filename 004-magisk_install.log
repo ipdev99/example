@@ -1,0 +1,37 @@
+- Copying zip to temp directory
+- Installing testSDR.zip
+- Device is system-as-root
+Archive:  /data/user/0/h.pyxrax/cache/flash/install.zip
+  inflating: module.prop
+**********************
+ Systemless Debloater 
+ by zgfg @ xda 
+**********************
+Archive:  /data/user/0/h.pyxrax/cache/flash/install.zip
+  inflating: customize.sh
+Archive:  /data/user/0/h.pyxrax/cache/flash/install.zip
+  inflating: changelog.md
+  inflating: customize.sh
+  inflating: LICENSE
+  inflating: module.prop
+  inflating: README.md
+  inflating: sDebloater_example
+  inflating: update.json
+*******************
+ Powered by Magisk 
+*******************
+- Extracting module files
+Android 12 SAR
+ae34659b2-ip:MAGISK:D (25206)
+Input debloat list file:
+ /storage/emulated/0/Download/SystemlessDebloaterList.sh
+
+Calculator --- app not found!
+CalculatorGooglePrebuilt --- app not found!
+Chrome-Stub --- app not found!
+ExactCalculator --- app not found!
+YouTubeMusicPrebuilt --- app not found!
+No app for debloating found!
+Before debloating the apps, from Settings/Applications, Uninstall (updates) and Clear Data for them!
+Systemless Debloater log: /storage/emulated/0/Download/SystemlessDebloater.log
+- Done

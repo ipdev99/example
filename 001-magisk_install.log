@@ -1,0 +1,37 @@
+- Copying zip to temp directory
+- Installing testSDR.zip
+- Device is system-as-root
+Archive:  /data/user/0/h.pyxrax/cache/flash/install.zip
+  inflating: module.prop
+**********************
+ Systemless Debloater 
+Archive:  /data/user/0/h.pyxrax/cache/flash/install.zip
+  inflating: customize.sh
+Archive:  /data/user/0/h.pyxrax/cache/flash/install.zip
+  inflating: changelog.md
+  inflating: customize.sh
+  inflating: LICENSE
+  inflating: module.prop
+  inflating: README.md
+  inflating: sDebloater_example
+  inflating: update.json
+ by zgfg @ xda 
+**********************
+*******************
+ Powered by Magisk 
+*******************
+- Extracting module files
+Android 12 SAR
+ae34659b2-ip:MAGISK:D (25206)
+
+ ! No configuration file found.
+  Please add a configuration file and try again.
+
+ Example configuration file saved as :
+  /storage/emulated/0/Download/sDebloater_example
+
+ This module will not be installed.
+
+A list of system (preinstalled) apps have been added to the log file.
+ Log file saved as:
+  /storage/emulated/0/Download/SystemlessDebloater.log
