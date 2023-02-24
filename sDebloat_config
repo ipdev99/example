@@ -1,0 +1,87 @@
+# User configuration file for Magisk Module Systemless Debloater (REPLACE)
+# Before debloating the apps, from Settings/Applications, Uninstall (updates) and Clear Data!
+# Copyright (c) zgfg @ xda, 2020-2022
+
+
+# Testing and advanced options.
+VerboseLog	# More aggressive logging.
+# MultiDebloat	# Set by defualt so it does not need to be included in the config script.
+
+
+# Define a list of stock apps for debloating:
+
+# Account
+# AnalyticsCore
+# AndroidAutoStub
+# AntHalService
+# BasicDreams
+# BookmarkProvider
+Calculator
+CalculatorGooglePrebuilt
+# CatchLog
+# Chrome
+# Chrome-Stub
+# CloudService
+# CneApp
+# DeskClock		# LineageOS Clock
+# EasterEgg
+# Eleven		# LineageOS Music
+# Email
+# EpicGameApp
+# Etar		# LineageOS Calendar
+# ExactCalculator		# LineageOS Calculator
+# facebook-appmanager
+# facebook-installer
+# facebook-services
+# FileExplorer_old
+# GameCenterGlobal
+# GlobalFashiongallery
+# GlobalMinusScreen
+# Gmail2
+# GoogleFeedback
+# GooglePartnerSetup
+# HybridAccessory
+# HybridPlatform
+# InMipay
+# Jelly		# LineageOS Browser
+# Joyose
+# Lens
+# Maps
+# MiBrowserGlobal
+# MiBrowserGlobalVendor
+# MiCreditInStub
+# MiDrop
+# MiLinkService2
+# MiPicks
+# MiPlayClient
+# MiRcs
+# MiRecycle
+# MiService
+# MiuiBrowserGlobal
+# MiuiBugReport
+# MiuiDaemon
+# MiuiMusicGlobal
+# MiWallpaper
+# MSA-Global
+# Music2
+# Netflix_activation
+# PartnerBookmarksProvider
+# PaymentService
+# PhotoTable
+# PrebuiltGmail
+# SafetyHubLprPrebuilt
+# SoterService
+# Stk
+# TouchAssistant
+# Traceur
+# Turbo
+# uceShimService
+# Velvet
+# Videos
+# VsimCore
+# Wellbeing
+# wps_lite
+# YellowPage
+YouTube		# Google YouTube
+YouTubeMusicPrebuilt		# Google YouTube Music
+# Zman
