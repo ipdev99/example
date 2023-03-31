@@ -162,7 +162,8 @@ PATH="${TOYS_PATH}:${PATH}"
 ui_print "Mounting partitions"
 
 # Ensure system is unmounted so mounting succeeds
-umount /system || umount /mnt/system || true
+umount /system || true
+# umount /system || umount /mnt/system || true
 umount /product || true
 umount /system_ext || true
 
@@ -183,7 +184,7 @@ if [ ! -z "$CURRENTSLOT" ]; then
   fi
 fi
 
-SYSTEM_BLOCK=$(find_block "system")
+SYSTEM_BLOCK=/dev/block/platform/msm_sdcc.1/by-name/system
 PRODUCT_BLOCK=$(find_block "product")
 SYSTEM_EXT_BLOCK=$(find_block "system_ext")
 
@@ -199,7 +200,7 @@ if [ "$DYNAMIC_PARTITIONS" = "true" ]; then
 fi
 
 # Mount and define SYSTEM_OUT
-SYSTEM_MNT=/mnt/system
+SYSTEM_MNT=/system
 mkdir -p "$SYSTEM_MNT" || true
 if mount -o rw "$SYSTEM_BLOCK" "$SYSTEM_MNT"; then
 ui_print "$SYSTEM_MNT mounted"
@@ -207,6 +208,7 @@ else
 error_mounting "$SYSTEM_MNT"
 fi
 SYSTEM_OUT="${SYSTEM_MNT}/system"
+# SYSTEM_OUT="${SYSTEM_MNT}"
 
 # Compare sdk version
 GAPPS_VERSION=$(getprop2 $TMP/build.prop version)
