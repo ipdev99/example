@@ -1,0 +1,8 @@
+id=MagiskSurvival
+name=Magisk Survival Script
+version=Module (v1)
+versionCode=10
+author=ip
+description=Simple module that will add a Magisk Survival to addon.d
+#support=https://github.com/
+#updateJson=https://raw.githubusercontent.com/
