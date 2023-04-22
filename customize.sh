@@ -20,14 +20,25 @@ ADB=/data/adb
 # __ Here we go. __
 
 if [ -d /system/addon.d ]; then
-	# Copy the current addon.d script.
+	# Make the module addon.d directory if it does not exist.
+	if [ ! -d "$MODPATH"/system/addon.d ]; then
+		mkdir -p "$MODPATH"/system/addon.d
+	else
+		# Remove the previous addon.d script.
+		rm "$MODPATH"/system/addon.d/99-magisk.sh
+	fi
+
+	# Copy the current addon.d script from magisk to the module directory.
 	cp "$ADB"/magisk/addon.d.sh "$MODPATH"/system/addon.d/99-magisk.sh
 
 	# Set owner, group, permission and security.
 	set_perm "$MODPATH"/system/addon.d/99-magisk.sh 0 0 0755 u:object_r:system_file:s0
 else
-	echo "This device does not support addon.d scripts."
+	echo "Survival (addon.d) scripts are not supported."
+	echo " This module will not be installed."
+	rm -rf "$ADB"/modules_update/MagiskSurvival
 	exit 1
 fi
 
 # __ Finish and Cleanup. __
+
