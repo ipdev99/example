@@ -1,0 +1,81 @@
+- Device platform: armeabi-v7a
+- Installing: a5768e02e-ip (26101)
+- Copying image to cache
+- Unpacking boot image
+Parsing boot image: [/data/user_de/0/com.topjohnwu.magisk/install/boot.img]
+HEADER_VER      [0]
+KERNEL_SZ       [5929280]
+RAMDISK_SZ      [1359238]
+SECOND_SZ       [0]
+EXTRA_SZ        [0]
+OS_VERSION      [13.0.0]
+OS_PATCH_LEVEL  [2023-05]
+PAGESIZE        [2048]
+NAME            []
+CMDLINE         [console=ttyHSL0,115200,n8 androidboot.hardware=flo user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.selinux=permissive buildvariant=userdebug]
+CHECKSUM        [74789fa154c04daf86009bd04096c4384aa458b7000000000000000000000000]
+! Could not find zImage gzip piggy, keeping raw kernel
+KERNEL_FMT      [zimage]
+RAMDISK_FMT     [gzip]
+- Checking ramdisk status
+Loading cpio: [ramdisk.cpio]
+- Stock boot image detected
+- Patching ramdisk
+resetprop: get prop [ro.crypto.state]: [unsupported]
+preinit device: userdata
+- Pre-init storage partition device ID: userdata
+Loading cpio: [ramdisk.cpio]
+Add entry [init] (0750)
+Create directory [overlay.d] (0750)
+Create directory [overlay.d/sbin] (0750)
+Add entry [overlay.d/sbin/magisk32.xz] (0644)
+Add entry [overlay.d/sbin/stub.xz] (0644)
+Patch with flag KEEPVERITY=[true] KEEPFORCEENCRYPT=[false]
+Loading cpio: [ramdisk.cpio.orig]
+Backup mismatch entry: [init] -> [.backup/init]
+Record new entry: [overlay.d] -> [.backup/.rmlist]
+Record new entry: [overlay.d/sbin] -> [.backup/.rmlist]
+Record new entry: [overlay.d/sbin/magisk32.xz] -> [.backup/.rmlist]
+Record new entry: [overlay.d/sbin/stub.xz] -> [.backup/.rmlist]
+Create directory [.backup] (0000)
+Add entry [.backup/.magisk] (0000)
+Dump cpio: [ramdisk.cpio]
+- Repacking boot image
+Parsing boot image: [/data/user_de/0/com.topjohnwu.magisk/install/boot.img]
+HEADER_VER      [0]
+KERNEL_SZ       [5929280]
+RAMDISK_SZ      [1359238]
+SECOND_SZ       [0]
+EXTRA_SZ        [0]
+OS_VERSION      [13.0.0]
+OS_PATCH_LEVEL  [2023-05]
+PAGESIZE        [2048]
+NAME            []
+CMDLINE         [console=ttyHSL0,115200,n8 androidboot.hardware=flo user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.selinux=permissive buildvariant=userdebug]
+CHECKSUM        [74789fa154c04daf86009bd04096c4384aa458b7000000000000000000000000]
+! Could not find zImage gzip piggy, keeping raw kernel
+KERNEL_FMT      [zimage]
+RAMDISK_FMT     [gzip]
+Repack to boot image: [new-boot.img]
+HEADER_VER      [0]
+KERNEL_SZ       [5929280]
+RAMDISK_SZ      [1536088]
+SECOND_SZ       [0]
+EXTRA_SZ        [0]
+OS_VERSION      [13.0.0]
+OS_PATCH_LEVEL  [2023-05]
+PAGESIZE        [2048]
+NAME            []
+CMDLINE         [console=ttyHSL0,115200,n8 androidboot.hardware=flo user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.selinux=permissive buildvariant=userdebug]
+CHECKSUM        [6b1bad6e43e04dee36bd0090614225f4618b216d000000000000000000000000]
+
+****************************
+ Output file is written to 
+ /storage/emulated/0/Download/magisk_patched-26101_k958F.img 
+****************************
+cp: can't preserve ownership of 'busybox': Operation not permitted
+cp: can't preserve ownership of 'magisk32': Operation not permitted
+cp: can't preserve ownership of 'magiskboot': Operation not permitted
+cp: can't preserve ownership of 'magiskinit': Operation not permitted
+cp: can't preserve ownership of 'magiskpolicy': Operation not permitted
+- All done!

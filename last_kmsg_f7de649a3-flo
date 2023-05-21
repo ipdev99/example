@@ -1,0 +1,649 @@
+[    0.000000] Booting Linux on physical CPU 0
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Linux version 3.4.113-followmsi+ (nobody@android-build) (gcc version 4.9.x 20150123 (prerelease) (GCC) ) #1 SMP PREEMPT Sun May 7 10:43:33 CEST 2023
+[    0.000000] CPU: ARMv7 Processor [511f06f0] revision 0 (ARMv7), cr=10c5387d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, PIPT instruction cache
+[    0.000000] Machine: QCT APQ8064 FLO
+[    0.000000] Truncating memory at 0x90000000 to fit in 32-bit physical address space
+[    0.000000] memory pool 3 (start fe9ff000 size 1600000) initialized
+[    0.000000] Initialized persistent memory from 88d00000-88dfffff
+[    0.000000] cma: CMA: reserved 16 MiB at af800000
+[    0.000000] Memory policy: ECC disabled, Data cache writealloc
+[    0.000000] socinfo_init: v7, id=172, ver=2.0, raw_id=2289, raw_ver=2289, hw_plat=8, hw_plat_ver=65536
+[    0.000000]  accessory_chip=0, hw_plat_subtype=0, pmic_model=18, pmic_die_revision=4
+[    0.000000] allocating 44236800 bytes at c2788000 (82988000 physical) for fb
+[    0.000000] PERCPU: Embedded 7 pages/cpu @c51bb000 s15360 r0 d13312 u32768
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 478211
+[    0.000000] Kernel command line: androidboot.hardware=flo user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.selinux=permissive buildvariant=userdebugÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿPAEHpÚ ‰| androidboot.emmc=true androidboot.serialno=06dce035 bootreason=Reboot fuse_info=Y ddr_vendor=elpida androidboot.baseband=apq asustek.hw_rev=rev_e androidboot.bootloader=FLO-04.08
+[    0.000000] HW Revision: ASUSTek input rev_e 
+[    0.000000] HW Revision: ASUSTek matched rev_e 
+[    0.000000] PID hash table entries: 4096 (order: 2, 16384 bytes)
+[    0.000000] Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
+[    0.000000] Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)
+[    0.000000] Memory: 140MB 58MB 4MB 7MB 254MB 1420MB = 1883MB total
+[    0.000000] Memory: 1828120k/1947928k available, 101092k reserved, 1275900K highmem
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[    0.000000]     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+[    0.000000]     vmalloc : 0xf0000000 - 0xff000000   ( 240 MB)
+[    0.000000]     lowmem  : 0xc0000000 - 0xef800000   ( 760 MB)
+[    0.000000]     pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+[    0.000000]       .text : 0xc0008000 - 0xc10a46cc   (17010 kB)
+[    0.000000]       .init : 0xc1100000 - 0xc1203c00   (1039 kB)
+[    0.000000]       .data : 0xc1204000 - 0xc12bb018   ( 733 kB)
+[    0.000000]        .bss : 0xc13a9308 - 0xc153afa8   (1608 kB)
+[    0.000000] SLUB: Genslabs=11, HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.000000] Preemptible hierarchical RCU implementation.
+[    0.000000] 	RCU dyntick-idle grace-period acceleration is enabled.
+[    0.000000] NR_IRQS:1177
+[    0.000000] sched_clock: 32 bits at 32kHz, resolution 30517ns, wraps every 131071999ms
+[    0.000000] Console: colour dummy device 80x30
+[    0.000000] console [tty0] enabled
+[    0.150177] Calibrating delay using timer specific routine.. 13.53 BogoMIPS (lpj=67685)
+[    0.150238] pid_max: default: 32768 minimum: 301
+[    0.150482] Security Framework initialized
+[    0.150512] SELinux:  Initializing.
+[    0.150726] Mount-cache hash table entries: 512
+[    0.151794] Initializing cgroup subsys debug
+[    0.151824] Initializing cgroup subsys cpuacct
+[    0.151824] Initializing cgroup subsys freezer
+[    0.151855] Init(adizing cgruq subsys`blkio
+[    0.151885] Inithalizing ceroup subsys bfqio
+[    0.151977] SP]: Testing write buffer coherency: ok
+[    0.152221] CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+[    0.152252] hw perfevents: enabled with ARMv7 Krait PMU driver, 5 counters available
+[    0.152343] Setting up static identity map for 0x80e6a590 - 0x80e6a618
+[    0.154907] CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+[    0.156646] CPU2: thread -1, cpu 2, socket 0, mpidr 80000002
+[    0.158355] CPU3: thread -1, cpu 3, socket 0, mpidr 80000003
+[    0.158477] Brought up 4 CPUs
+[    0.158538] SMP: Total of 4 processors activated (54.14 BogoMIPS).
+[    0.172943] VFP support v0.3: implementor 51 architecture 64 part 6f variant 1 rev 0
+[    0.173461] dummy: 
+[    0.174682] NET: Registered protocol family 16
+[    0.180664] DMA: preallocated 1792 KiB pool for atomic coherent allocations
+[    0.181030] AXI: msm_bus_fabric_init_driver(): msm_bus_fabric_init_driver
+[    0.184570] MIDR      = 0x511f06f0
+[    0.184631] meminfo_init: smem ram ptable found: ver: 0 len: 5
+[    0.184692] Found 1 memory banks grouped into 8 memory regions
+[    0.185028] gpiochip_add: registered GPIOs 0 to 151 on device: msmgpio
+[    0.185974] socinfo_init: v7, id=172, ver=2.0, raw_id=2289, raw_ver=2289, hw_plat=8, hw_plat_ver=65536
+[    0.186004]  accessory_chip=0, hw_plat_subtype=0, pmic_model=18, pmic_die_revision=4
+[    0.186126] msm_rpm_init: RPM firmware 3.0.16842936
+[    0.206970] msm_rpm_get_status(): Status id 433 not defined for target
+[    0.207000] msm_rpm_get_status(): Status id 433 not defined for target
+[    0.207031] msm_rpm_get_status(): Status id 433 not defined for target
+[    0.207061] msm_rpm_get_status(): Status id 433 not defined for target
+[    0.207092] msm_rpm_get_status(): Status id 433 not defined for target
+[    0.207092] msm_rpm_get_status(): Status id 433 not defined for target
+[    0.207122] msm_rpm_get_status(): Status id 433 not defined for target
+[    0.207153] msm_rpm_get_status(): Status id 433 not defined for target
+[    0.225372] ASUSTek: Bypassing PCB_ID3
+[    0.225433] ASUSTek: PCBID=043
+[    0.226379] gpio_vreg_probe: id=203, name=ext_mpp8, gpio=203, gpio_label=ext_mpp8_en
+[    0.226623] pm8921_probe: PMIC revision 1: F4
+[    0.226654] pm8921_probe: PMIC revision 2: 06
+[    0.226684] pm8921_probe: PMIC version: PM8921 rev 3.0
+[    0.226715] pm8921_probe: PMIC Restart Reason: Triggered from KPD (power key press)
+[    0.227752] gpiochip_add: registered GPIOs 152 to 195 on device: pm-gpio
+[    0.228271] pm_gpio_probe: OK: base=152, ngpio=44
+[    0.228576] gpiochip_add: registered GPIOs 196 to 207 on device: pm8xxx-mpp
+[    0.228668] pm8xxx_mpp_probe: OK: base=196, ngpio=12
+[    0.230499] pm8821_probe: PMIC revision 1: PM8821 rev F3
+[    0.230529] pm8821_probe: PMIC revision 2: PM8821 rev 0B
+[    0.230560] pm8821_probe: PMIC version: PM8821 ver 2.1
+[    0.231109] gpiochip_add: registered GPIOs 208 to 211 on device: pm8xxx-mpp
+[    0.231170] pm8xxx_mpp_probe: OK: base=208, ngpio=4
+[    0.231475] gpio_vreg_probe: gpio_label required.
+[    0.231506] msm-gpio-regulator: probe of msm-gpio-regulator.174 failed with error -22
+[    0.232727] saw_probe: id=0, name=8921_s5
+[    0.233093] saw_probe: id=1, name=8921_s6
+[    0.233459] saw_probe: id=2, name=8821_s0
+[    0.233825] saw_probe: id=3, name=8821_s1
+[    0.237609] ------------[ cut here ]------------
+[    0.237640] WARNING: at ../../../../../../kernel/google/msm/lib/radix-tree.c:297 radix_tree_preload+0x54/0x68()
+[    0.237701] [<c0016d48>] (unwind_backtraae+0x0/0h160) frnm [<c00a1;e8>] (war~_slowpath_null+0x40/0x64)
+[  ` 0.037762] [<b00a19e8>] (warn_slowpath_null+0x40/0x64) from [<c0404478>] (radix_tree_preload+0x54/0x68)
+[    0.237792] [<c0404478>] (radix_tree_preload+0x54/0x68) from [<c0086f20>] (msm_bus_fabric_probe+0x454/0x9fc)
+[    0.237854] [<c0086f20>] (msm_bus_fabric_probe+0x454/0x9fc) from [<c056da84>] (driver_probe_device+0xcc/0x470)
+[    0.237915] [<c056da84>] (driver_probe_device+0xcc/0x470) from [<c056bf6c>] (bus_for_each_drv+0x70/0xb0)
+[    0.237945] [<c056bf6c>] (bus_for_each_drv+0x70/0xb0) from [<c056dfcc>] (device_attach+0xa0/0xb8)
+[    0.238006] [<c056dfcc>] (device_attach+0xa0/0xb8) from [<c056c248>] (bus_probe_device+0x98/0xd0)
+[    0.238037] [<c056c248>] (bus_probe_device+0x98/0xd0) from [<c056a19c>] (device_add+0x554/0x6f8)
+[    0.238098] [<c056a19c>] (device_add+0x554/0x6f8) from [<c056fa84>] (platform_device_add+0x114/0x234!
+[   $0.238928] [,c056fa84>] (platform_device_a$d+0x114/0x234) from [¼c056fãa8>] (plauform_add_devices+0x40/0x88)
+[    0.238189] [<c056fca8>] (platform_add_devices+0x40/0x88) from [<c1112bd4>] (apq8064_cdp_init+0x3dc/0xab0)
+[    0.238220] [<c1112bd4>] (apq8064_cdp_init+0x3dc/0xab0) from [<c1104224>] (customize_machine+0x20/0x34)
+[    0.238281] [<c1104224>] (customize_machine+0x20/0x34) from [<c1100b18>] (do_one_initcall+0xa4/0x1a4)
+[    0.238311] [<c1100b18>] (do_one_initcall+0xa4/0x1a4) from [<c1100d6c>] (kernel_init+0x154/0x23c)
+[    0.238372] [<c1100d6c>] (kernel_init+0x154/0x23c) from [<c0010768>] (kernel_thread_exit+0x0/0x8)
+[    0.238433] ---[ end trace faa524aa2de95874 ]---
+[    0.242767] Sensors:DSPS: initial dsps.
+[    0.243713] [ELAN] Touch dirver register
+[    0.244018] persistent_ram: found existing buffer, size 225700, start 149882
+[    0.851257] console [ram-1] enabled
+[    0.851867] apq8064_init_fb: lcd_type=0
+[    0.852050] apq8064_init_fb: register mipi_JDI_panel_device
+[    0.853424] msm_gpiomux_install: write failure: -22
+[    0.853515] msm_gpiomux_install: write failure: -22
+[    0.853607] msm_gpiomux_install: write failure: -22
+[    0.853759] msm_gpiomux_install: write failure: -22
+[    0.853851] msm_gpiomux_install: write failure: -22
+[    0.854003] msm_gpiomux_install: write failure: -22
+[    0.854919] Registering gpio keys
+[    0.855010] Reconfigure VOL_UP(GPIO155) and VOL_DOWN(GPIO189) with PMIC
+[    0.855285] 8921_l17: Failed to create debugfs directory
+[    0.860382] sps:BAM 0x12244000 enabled: ver:0x5, number of pipes:20
+[    0.860534] sps:BAM 0x12244000 is registered.
+[    0.861114] sps:sps is ready.
+[    0.894409] bio: create slab <bio-0> at 0
+[    0.895202] vgaarb: loaded
+[    0.895477] ION heap vmalloc created
+[    0.895629] ION heap mm created at a0000000 with size 5c00000
+[    0.895751] ION heap mm_fw created at 9fe00000 with size 1e0000
+[    0.895935] ION heap mfc created at a5c00000 with size 2000
+[    0.896057] ION heap iommu created
+[    0.896179] ION heap qsecom created at fea07000 with size 780000
+[    0.896392] ION heap audio created at ff187000 with size 4cf000
+[    0.897644] pm8xxx_pwm_probe: OK
+[    0.898437] SCSI subsystem initialized
+[    0.898834] sps:BAM 0x28084000 enabled: ver:0x12, number of pipes:31
+[    0.898986] sps:BAM 0x28084000 is registered.
+[    0.902099] usbcore: registered new interface driver usbfs
+[    0.902343] usbcore: registered new interface driver hub
+[    0.902648] usbcore: registered new device driver usb
+[    0.902862] Linux media interface: v0.10
+[    0.903106] Linux video capture interface: v2.00
+[    0.904327] apq8064_pm8921_pwm_init+
+[    0.904479] apq8064_pm8921_pwm_init-
+[    0.905303] msm_iommu_dev: device vpe mapped at f0400000, with 2 ctx banks
+[    0.905517] msm_iommu_dev: device mdp0 mapped at f0600000, with 2 ctx banks
+[    0.905792] msm_iommu_dev: device mdp1 mapped at f0800000, with 2 ctx banks
+[    0.906066] msm_iommu_dev: device rot mapped at f0a00000, with 2 ctx banks
+[    0.906280] msm_iommu_dev: device ijpeg mapped at f0c00000, with 2 ctx banks
+[    0.906555] msm_iommu_dev: device vfe mapped at f0e00000, with 2 ctx banks
+[    0.906768] msm_iommu_dev: device vcodec_a mapped at f1000000, with 2 ctx banks
+[    0.907012] msm_iommu_dev: device vcodec_b mapped at f1200000, with 2 ctx banks
+[    0.907318] msm_iommu_dev: device gfx3d mapped at f1400000, with 3 ctx banks
+[    0.907531] msm_iommu_dev: device jpegd mapped at f1600000, with 2 ctx banks
+[    0.907806] msm_iommu_dev: device gfx3d1 mapped at f1800000, with 3 ctx banks
+[    0.908081] msm_iommu_dev: device vcap mapped at f1a00000, with 2 ctx banks
+[    0.908569] msm_iommu_ctx msm_iommu_ctx.2: context vpe_src using bank 0
+[    0.908874] msm_iommu_ctx msm_iommu_ctx.3: context vpe_dst using bank 1
+[    0.909118] msm_iommu_ctx msm_iommu_ctx.4: context mdp_port0_cb0 using bank 0
+[    0.909454] msm_iommu_ctx msm_iommu_ctx.5: context mdp_port0_cb1 using bank 1
+[    0.909759] msm_iommu_ctx msm_iommu_ctx.6: context mdp_port1_cb0 using bank 0
+[    0.910034] msm_iommu_ctx msm_iommu_ctx.7: context mdp_port1_cb1 using bank 1
+[    0.910339] msm_iommu_ctx msm_iommu_ctx.8: context rot_src using bank 0
+[    0.910644] msm_iommu_ctx msm_iommu_ctx.9: context rot_dst using bank 1
+[    0.910888] msm_iommu_ctx msm_iommu_ctx.10: context ijpeg_src using bank 0
+[    0.911163] msm_iommu_ctx msm_iommu_ctx.11: context ijpeg_dst using bank 1
+[    0.911468] msm_iommu_ctx msm_iommu_ctx.12: context vfe_imgwr using bank 0
+[    0.911773] msm_iommu_ctx msm_iommu_ctx.13: context vfe_misc using bank 1
+[    0.912048] msm_iommu_ctx msm_iommu_ctx.14: context vcodec_a_stream using bank 0
+[    0.912353] msm_iommu_ctx msm_iommu_ctx.15: context vcodec_a_mm1 using bank 1
+[    0.912689] msm_iommu_ctx msm_iommu_ctx.16: context vcodec_b_mm2 using bank 0
+[    0.913024] msm_iommu_ctx msm_iommu_ctx.17: context gfx3d_user using bank 0
+[    0.913391] msm_iommu_ctx msm_iommu_ctx.18: context gfx3d_priv using bank 1
+[    0.913696] msm_iommu_ctx msm_iommu_ctx.0: context jpegd_src using bank 0
+[    0.913940] msm_iommu_ctx msm_iommu_ctx.1: context jpegd_dst using bank 1
+[    0.914337] msm_iommu_ctx msm_iommu_ctx.19: context gfx3d1_user using bank 0
+[    0.914703] msm_iommu_ctx msm_iommu_ctx.20: context gfx3d1_priv using bank 1
+[    0.914947] msm_iommu_ctx msm_iommu_ctx.21: context vcap_vc using bank 0
+[    0.915252] msm_iommu_ctx msm_iommu_ctx.22: context vcap_vp using bank 1
+[    0.915435] Advanced Linux Sound Architecture Driver Version 1.0.25.
+[    0.916107] Bluetooth: Core ver 2.16
+[    0.916229] NET: Registered protocol family 31
+[    0.916381] Bluetooth: HCI device and connection manager initialized
+[    0.916473] Bluetooth: HCI socket layer initialized
+[    0.916625] Bluetooth: L2CAP socket layer initialized
+[    0.916992] Bluetooth: SCO socket layer initialized
+[    0.917327] cfg80211: Calling CRDA to update world regulatory domain
+[    0.917510] cfg80211: World regulatory domain updated:
+[    0.917602] cfg80211:   (start_freq - end_freq @ bandwidth), (max_antenna_gain, max_eirp)
+[    0.917785] cfg80211:   (2402000 KHz - 2472000 KHz @ 40000 KHz), (300 mBi, 2000 mBm)
+[    0.917938] cfg80211:   (2457000 KHz - 2482000 KHz @ 40000 KHz), (300 mBi, 2000 mBm)
+[    0.918090] cfg80211:   (2474000 KHz - 2494000 KHz @ 20000 KHz), (300 mBi, 2000 mBm)
+[    0.918182] cfg80211:   (5170000 KHz - 5250000 KHz @ 40000 KHz), (300 mBi, 2000 mBm)
+[    0.918365] cfg80211:   (5735000 KHz - 5835000 KHz @ 40000 KHz), (300 mBi, 2000 mBm)
+[    0.919494] Switching to clocksource gp_timer
+[    0.961273] NET: Registered protocol family 2
+[    0.969116] IP route cache hash table entries: 32768 (order: 5, 131072 bytes)
+[    0.969818] TCP established hash table entries: 131072 (order: 8, 1048576 bytes)
+[    0.971130] TCP bind hash table entries: 65536 (order: 7, 524288 bytes)
+[    0.971801] TCP: Hash tables configured (established 131072 bind 65536)
+[    0.971984] TCP: reno registered
+[    0.972076] UDP hash table entries: 512 (order: 2, 16384 bytes)
+[    0.972259] UDP-Lite hash table entries: 512 (order: 2, 16384 bytes)
+[    0.972686] NET: Registered protocol family 1
+[    0.973266] RPC: Registered named UNIX socket transport module.
+[    0.973358] RPC: Registered udp transport module.
+[    0.973510] RPC: Registered tcp transport module.
+[    0.973602] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.974060] Trying to unpack rootfs image as initramfs...
+[    1.051391] Freeing initrd memory: 1564K
+[    1.055755] Detected 9 counters on the L2CC PMU.
+[    1.057525] pil_qdsp6v4 pil_qdsp6v4.0: using secure boot
+[    1.058868] pil_riva pil_riva: using secure boot
+[    1.061157] pil_dsps pil_dsps: using secure boot
+[    1.062194] pil_gss pil_gss: using secure boot
+[    1.064178] smd_channel_probe_worker: allocation table not initialized
+[    1.069885] msm_dsps driver version 4.03.
+[    1.071472] NET: Registerel protocol famal{ 27
+[  0 1.074432] lpass_fatal_init: lpqss RSR driver init'ed.
+[    1.074676] wcnss_896°:"module knitialized
+[    1.075103] gss_8064_init: gss fatal driver init'ed.
+[    1.075714] acpuclk-8064 acpuclk-8064: SPEED BIN: 14
+[    1.075805] acpuclk-8064 acpuclk-8064: ACPU PVS: 3
+[    1.078430] acpuclk-8064 acpuclk-8064: CPU0: 12 frequencies supported
+[    1.078521] acpuclk-8064 acpuclk-8064: CPU1: 12 frequencies supported
+[    1.078704] acpuclk-8064 acpuclk-8064: CPU2: 12 frequencies supported
+[    1.078857] acpuclk-8064 acpuclk-8064: CPU3: 12 frequencies supported
+[    1.082458] usbcore: registered new interface driver hsic_sysmon
+[    1.083465] audit: initializing netlink socket (disabled)
+[    1.083618] type=2000 audit(1.060:1): initialized
+[    1.085205] highmem bounce pool size: 64 pages
+[    1.092315] VFS: Disk quotas dquot_6.5.2
+[    1.092742] Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+[    1.095733] Registering sdcardfs 0.1
+[    1.096130] NFS: Registering the id_resolver key type
+[    1.097534] NTFS driver 2.1.30 [Flags: R/W].
+[    1.098022] exFAT: Version 1.2.5
+[    1.098266] fuse init (API version 7.18)
+[    1.103271] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 248)
+[    1.103393] io scheduler noop registered (default)
+[    1.103546] io scheduler deadline registered
+[    1.103698] io scheduler cfq registered
+[    1.104156] io scheduler bfq pe'istered
+[! ( 1.104309Y BFQ M/O-scheduler: v7r8
+[   $1,106903] mipi_dsi base!phy_addr = 0x|700000 vist = 0xf1c00000
+[    1.107177] mmss_sfpb  base phy_addr = 0x5700000,virt = 0xf007e000
+[    1.107452] mipi_JDI_1080P_pt_init+
+[    1.107727] mipi_JDI_lcd_probe+
+[    1.107910] mipi_JDI_lcd_probe, hw_revision=0
+[    1.108001] mipi_JDI_lcd_probe, lcd_pwm_type=0
+[    1.108459] mipi_JDI_lcd_probe+
+[    1.108551] mipi_JDI_lcd_probe, hw_revision=0
+[    1.108642] mipi_JDI_lcd_probe, lcd_pwm_type=0
+[    1.108825] setting pdata->panel_info.fb_num to 3. type: 9
+[    1.123016] FrameBuffer[0] 1200x1920 size=28016640 bytes is registered successfully!
+[    1.123809] mipi_JDI_lcd_probe-
+[    1.123901] mipi_JDI_1080P_pt_init-
+[    1.125061] setting pdata->panel_info.fb_num to 1. type: 7
+[    1.127746] FrameBuffer[1] 1920x1080 size=0 bytes is registered successfully!
+[    1.128265] mdp4_dtv_vsync_init: ndx=0
+[    1.128570] hdmi_msm hdmi_msm.1: external_common_state_create: sysfs group ededc608
+[    1.128723] hdmi_msm hdmi_msm.1: hdmi_msm_config_hdcp_feature: HDCP Feature: Enabled
+[    1.130371] 
+[    1.130371]  msm_vidc_enc: Inside vid_enc_init()
+[    1.130859] 
+[    1.130859]  msm_vidc_enc: Inside vid_enc_vcd_init()
+[    1.131927] smux_init: unable to create log context
+[    1.133453] msm_serial_hs module loaded
+[    1.134002] msm_serial_hsl: detected port #1
+[    1.134429] msm_serial_hsl.1: ttyHSL1 at MMIO 0x12450000 (irq = 225) is a MSM
+[    1.135131] msm_serial_hsl: detected port #0
+[    1.135528] msm_serial_hsl.0: ttyHSL0 at MMIO 0x16640000 (irq = 190) is a MSM
+[    1.136322] msm_serial_hsl: driver initialized
+[    1.136901] msm_rng:Data not available!
+[    1.149902] msm_rng:Data not available!
+[    1.172088] msm_rotator_probe: rotator_hw_revision=2
+[    1.175476] diagchar initialized now
+[    1.179626] kgsl kgsl-3d0: |kgsl_iommu_init| MMU type set for device is IOMMU
+[    1.189910] brd: module loaded
+[    1.194000] loop: module loaded
+[    1.194671] zram: Created 1 device(s)
+[    1.196258] anx7808 init gpio
+[    1.269927] sp_tx_hardware_poweron: anx7808 power on
+[    1.270751] ANX7808 is found.
+[    1.272094] 3.3V output disabled
+[    1.329925] sp_tx_hardware_powerdown: anx7808 power down
+[    1.330047] SP_TX To System State: 
+[    1.330139] STATE_CABLE_PLUG
+[    1.330780] tabla-slim tabla-slim: Platform data from board file
+[    1.490600] wcd9xxx_slim_probe: failed to get slimbus tabla-slim logical address: -6
+[    1.494537] tabla2x-slim tabla2x-slim: Platform data from board file
+[    1.557159] wcd9xxx_check_codec_type: codec is tabla_codec
+[    1.557495] wcd9xxx_check_codec_type: Read codec idbytes & version
+[    1.557525] byte_0[00000002] byte_1[00000000] byte_2[00000000]
+[    1.557525]  byte_3[00000001] version = 2
+[    1.559478] i2c-core: driver [tabla-i2c-core] using legacy suspend method
+[    1.559814] i2c-core: driver [tabla-i2c-core] using legacy resume method
+[    1.561187] bcm2079x-i2c 0-0077: bcm2079x_probe, probing bcm2079x driver flags = 0
+[    1.561767] bcm2079x-i2c 0-0077: requesting IRQ 320
+[    1.562225] bcm2079x-i2c 0-0077: bcm2079x_probe, probing bcm2079x driver exited successfully
+[    1.563201] SCSI Media Changer driver v0.25 
+[    1.564270] spi_qsd spi_qsd.0: master is unqueued, this is deprecated
+[    1.566925] tun: Universal TUN/TAP device driver, 1.6
+[    1.567260] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+[    1.567596] rmnet_init: BAM devices[8]
+[    1.568450] random: nonblocking pool is initialized
+[    1.594299] PPP generic driver version 2.4.2
+[    1.594726] PPP BSD Compression module registered
+[    1.595062] PPP Deflate Compression module registered
+[    1.595947] PPP MPPE Compression module registered
+[    1.596282] NET: Registered protocol family 24
+[    1.596527] SLIP: version 0.8.4-NET3.019-NEWTTY (dynamic channels, max=256) (6 bit encapsulation enabled).
+[    1.596862] CSLIP: code copyright 1989 Regents of the University of California.
+[    1.597351] wcnss_wlan probed in built-in mode
+[    1.598968] usbcore: registered new interface driver asix
+[    1.599243] usbcore: registered new interface driver cdc_ether
+[    1.599639] usbcore: registered new interface driver net1080
+[    1.600006] usbcore: registered new interface driver cdc_subset
+[    1.600402] usbcore: registered new interface driver zaurus
+[    1.600891] usbcore: registered new interface driver cdc_ncm
+[    1.602111] smb345_probe+
+[    1.605712] smb345_charger: [smb345_inok_irq] GPIO pin irq 311 requested ok, smb345_INOK = H
+[    1.605987] smb345_charger: [smb345_wireless_irq] GPIO pin irq 322 requested ok, wpc_pok = H
+[    1.606201] smb345_charger: [smb345_wireless_en_config] GPIO pin 179, 183 requested ok, wpc_en1 = L, wpc_en2 = L
+[    1.606384] smb345_probe-
+[    1.606506] i2c-core: driver [smb345] using legacy suspend method
+[    1.606628] i2c-core: driver [smb345] using legacy resume method
+[    1.606842] bq27541_probe + client->addr= 55
+[    1.608001] bq27541_get_psp status: Not charging ret= 0x0201
+[    1.609069] bq27541_get_psp voltage_now= 4203000 uV
+[    1.610046] bq27541_get_capacity = 100% ret= 100
+[    1.611114] bq27541_get_psp temperature= 229 (0.1¢XC)
+[    1.612091] bq27541_get_psp current_now = -593 mA
+[    1.613098] bq27541_get_psp charge_now (compensated) = 3422000 uAh
+[    1.614166] bq27541_get_psp charge_avg (uncompensated) = 3489000 uAh
+[    1.615203] bq27541_get_psp charge_full = 3431000 uAh
+[    1.616180] bq27541_get_psp charge_design = 4090000 uAh
+[    1.617187] bq27541_get_psp energy_now = 12785000 uWh
+[    1.618225] bq27541_get_psp charge_counter = -182000 uWh
+[    1.619201] bq27541_get_psp power_now = -2492000 uW
+[    1.620269] bq27541_get_psp cycle count = 273
+[    1.621368] bq27541_get_psp status: Not charging ret= 0x0201
+[    1.622406] bq27541_get_psp status: Not charging ret= 0x0201
+[    1.623413] bq27541_get_psp voltage_now= 4203000 uV
+[    1.623535] setup_low_battery_irq irq=317, LL_BAT_T30=1
+[    1.623565] bq27541_probe - bq27541-battery driver registered
+[    1.623657] i2c-core: driver [bq27541-battery] using legacy suspend method
+[    1.623657] i2c-core: driver [bq27541-battery] using legacy resume method
+[    1.623840] msm_otg msm_otg: msm_otg probe
+[    1.623931] msm_otg msm_otg: failed to get phy_clk
+[    1.624023] msm_otg msm_otg: OTG regs = f01f8000
+[    1.625274] bq27541_get_capacity = 100% ret= 100
+[    1.626281] bq27541_get_psp temperature= 229 (0.1¢XC)
+[    1.627227] msm_otg msm_otg: PMIC IRQ for ID notifications doesn't exist
+[    1.627288] bq27541_get_psp current_now = -593 mA
+[    1.627960] bq27541_get_psp charge_now (compensated) = 3422000 uAh
+[    1.628021] gpio 23 request failed 
+[    1.628082] }sm_otg_acok_iîit: GPIo pin irq 311 pequested ok, msM_tg_ACOK!= H
+[    1.628468_ gpio 77 request failed 
+[    1.62893¶] msm_otg_id_pin_init: GPKO pin"i~q 365 requested$oK, msm_o4g_id_pin = H
+[    1.6:8967](bq27541_get_psp charge_avg (uncompensated) = 3489000 uAh
+[    1.629608] bq27541_get_psp charge_full = 3431000 uAh
+[    1.630126] ehci_hcd: USB 2.0 'E&hanced' Host Ao*troìler (eHCI) Drmver
+[    1.630310] bq27541_get_psp charge_d`sign ? 4090400 uAh
+_    1.630950] bq27541_get_psp energy_now = 12785000 uWh
+[    1.631713] bq27541_get_psp charge_counter = -182000 uWh
+[    1.632263] usbcore: registered new interface driver cdc_acm
+[    1.632385] bq27541_get_psp power_now = -2492000 uW
+[    1.632751] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+[    1.633026] bq27541_get_psp cycle count = 273
+[    1.633239] Initializing USB Mass Storage driver...
+[    1.633636] usbcore: registered new interface driver usb-storage
+[    1.633850] USB Mass Storage support registered.
+[    1.634338] usbcore: registered new interface driver usbserial
+[    1.634552] usbserial: USB Serial Driver core
+[    1.634918] usbcore: registered new interface driver sierra
+[    1.635192] USB Serial support registered for Sierra USB modem
+[    1.635589] usbcore: registered new interface driver qc_csvt
+[    1.635864] USB Serial support registered for qc_csvt
+[    1.636260] usbcore: registered new interface driver diag_bridge
+[    1.636779] usbcore: registered new interface driver mdm_bridge
+[    1.638275] usbcore: registered new interface driver ks_bridge
+[    1.638458] ksb_init: init done
+[    1.639129] msm_otg msm_otg: phy_reset: success
+[    1.640686] msm_hsusb msm_hsusb: [ci13xxx_start] hw_ep_max = 32
+[    1.643646] file system registered
+[    1.643920] mbim_init: initialize 1 instances
+[    1.644134] mbim_init: Initialized 1 ports
+[    1.646179] rndis_qc_init: initialize rndis QC instance
+[    1.646728] android_usb gadget: Mass Storage Function, version: 2009/09/11
+[    1.646850] android_usb gidget: Number of LUNs=1
+[    1.6t7033]  lun0: LUÎ: removable f)le: (no mediui)[  ` 1.647521] anäroid_usb gadget: android_usb ready
+[    1.648468] mousedev: PS/2 mouse device common for all mice
+[    1.649261] usbcore: registered new interface driver xpad
+[    1.649444] [ektf3k]:[elan] elan_ktf3k_ts_init
+[    1.649719] [ektf3k]:[ELAN] Start HW reset!
+[    1.740264] [usb_otg] switch to peripheral mode by default (boot)
+[    1.910430] [ektf3k]:[elan]detect intr=>Old FW
+[    1.910552] [ektf3k]:The boot code is old!
+[    1.940795] [ektf3k]:[elan] __hello_packet_handler: hello packet 55:55:55:55
+[    1.940887] [ektf3k]:[elan] hello packet's rc = 0
+[    2.152557] [ektf3k]:[elan] __fw_packet_handler: firmware version: 0xa044
+[    2.154602] [ektf3k]:[elan] __fw_packet_handler: X resolution: 0x007e
+[    2.156677] [ektf3k]:[elan] __fw_packet_handler: Y resolution: 0x00d2
+[    2.158752] [ektf3k]:[elan] __fw_packet_handler: firmware id: 0x3029
+[    2.173217] [ektf3k]:[elan] __fw_packet_handler: boot code id: 0x6047
+[    2.173400] [ektf3k]:[Elan] Max X=2239, Max Y=1343
+[    2.173675] input: elan-touchscreen as /devices/virtual/input/input0
+[    2.174224] input: wake_gesture as /devices/virtual/input/input1
+[    2.174438] [ektf3k]:The firmware was version 0xA044 and id:0x3029
+[    2.174713] [ektf3k]: /proc/ektf_dbg created
+[    2.175140] [ektf3k]:[elan] Start touchscreen elan-touchscreen in interrupt mode
+[    2.175384] [ektf3k]:[ELAN]misc_register finished!!
+[    2.175506] elan-ktf3k 3-0010: Update power source to 0
+[    2.175933] [ektf3k]:[elan]`eman_ktn3k_ts_rough_calébrate: enteb
+[    2.176x55] [ektf3k]:[elan] dump cmd: 54,$29, 02,$01
+[    2.176696] lis3dh_acc accelerometer driver: init
+[    2.176849] i2c-core: driver [lis3dh_acc] using legacy suspend method
+[    2.177032] i2c-core: driver [lis3dh_acc] using legacy resume method
+[    2.177368] ASUSTek: lid_driver_probe
+[    2.177642] input: lid_input as /devices/virtual/input/input2
+[    2.178710] rtc-pm8xxx rtc-pm8xxx: rtc core: registered pm8xxx_rtc as rtc0
+[    2.179290] i2c /dev entries driver
+[    2.182983] ov5693_init_module:105
+[    2.183380] ov5693_init_module:110 rc -19
+[    2.21798·] gpio 25 VCM_PD(1)
+[    2.21:280] gpéo"31 XSHUTDN(1)
+[$   2.227447] [ektf3k]:[elan] Checksum!ErrOr 1 byte[2]=FF
+[    2.275177] mi1040_init_module:323
+[    2.275695] mi1040_init_module:329 rc -19
+[    2.450286] gpio 43 CAM_RST(1)
+[    2.510253] mi1040_sensor_match_id +++
+[    2.511077] Sensor id: 0x2481
+[    2.511199] PMIC gpio 11 CAM_VENDOR_1(1)
+[    2.511291] PMIC gpio 10 CAM_VENDOR_0(0)
+[    2.511474] PMIC gpio 24 CAM_LENS(1)
+[    2.511596] Vendor is A
+[    2.511688] mi1040_sensor_match_id ---
+[    2.752593] lirc_dev: IR Remote Control driver registered, major 236 
+[    2.752777] IR NEC protocol handler initialized
+[    2.752868] IR RC5(x) protocol handler initialized
+[    2.753021] IR RC6 protocol handler initialized
+[    2.753112] IR JVC protocol handler initialized
+[    2.753265] IR Sony protocol handler initialized
+[    2.753387] IR RC5 (streamzap) protocol handler initialized
+[    2.753540] IR SANYO protocol handler initialized
+[    2.753631] IR MCE Keyboard/mouse protocol handler initialized
+[    2.753723] IR LIRC bridge handler initialized
+[    2.754394] gspca_main: v2.14.0 registered
+[    2.754852] usbcore: registered new interface driver uvcvideo
+[    2.755004] USB Video Class driver (1.1.1)
+[    2.756286] pm8xxx_adc_probe: failed to request pa_therm vreg with error -517
+[    2.757354] CAP1106: [cap1106_init] 
+[    2.757507] i2c-core: driver [cap1106] using legacy suspend meth/d
+[    .757659\ i2c-core> driver"[cap110¶] using$legacy resume metiod
+[    2.781036] pm8xxø_tm_probe: OK
+[    2.782043] pm8xxx_tm_probe: OK
+[    2.783660] device-mapper: ioctl: 4.22.0-ioctl (2011-10-19) initialised: dm-devel@redhat.com
+[    2.784240] Bluetooth: HCI UART driver ver ².2
+[    2.784776] Bluetooth: HCI 4 protoCol ynitialized
+[    2n784759]!Bluetooôh: HCIATH3K protocol initialized
+[    2.785552] Bluetooth: HCI_IBS protocol initialized
+[    2.787811] cpuidle: using governor ladder
+[    .78804M cpuidle: usi.g governor íenu
+[    2.788970] mmc0: SDCC Version8 0x06000018Š[    2.790893] mmc0: úam physical base=0x12402000
+[    2.791076] mmc0: bam virtual base=0xf0318000
+[    2.791168] sps:BAM 0x12402000 is registered.
+[    2.791290] mmc0: BAM device registered. bam_handle=0xed96aa00
+[    2.792907] sps:BAM 0x12402000 enabled: ver:0x5, number of pipes:6
+[    2.794372] mmc0: Qualcomm MSM SDCC-BAM at 0x0000000012402000 irq 130
+[    2.794647] mmc0: Qualcomm MSM SDCC-DML at 0x0000000012400800
+[    2.794799] mmc0: No card detect facilities available
+[    2.796722] mmc0: Qualcomm MSM SDCC-core at 0x0000000012400000 irq 136,0 dma -1 dmacrcri -1
+[    2.796905] mmc0: Controller capabilities: 0x0000039a
+[    2.796997] mmc0: 8 bit data mode enabled
+[    2.797088] mmc0: 4 bit data mode disabled
+[    2.797241] mmc0: polling status mode disabled
+[    2.797363] mmc0: MMC clock 400000 -> 96000000 Hz, PCLK 0 Hz
+[    2.797546] mmc0: Slot eject status = 0
+[    2.797637] mmc0: Power save feature enable = 1
+[    2.797729] mmc0: SPS-BAM data transfer mode available
+[    2.800628] usbcore: registered new interface driver usbhid
+[    2.800720] usbhid: USB HID core driver
+[    2.801666] ashmem: initialized
+[    2.802398] usbcore: registered new interface driver snd-usb-audio
+[    2.804077] tabla_probe
+[    2.805908] msm_pcm_probe: dev name msm-voip-dsp
+[    2.806335] msm-dai-q6-mi2s msm-dai-q6-mi2s: msm_dai_q6_mi2s_platform_data_validation: playback sdline 0 capture sdline 8
+[    2.806518] msm-dai-q6-mi2s msm-dai-q6-mi2s: msm_dai_q6_mi2s_platform_data_validation: playback ch_max 0 capture ch_mx 8
+[    2.807800] msm_pcm_probe: dev name msm-pcm-dsp
+[    2.808319] msm_pcm_probe: dev name msm-multi-ch-pcm-dsp
+[    2.808746] msm_pcm_probe: dev name msm-lowlatency-pcm-dsp
+[    2.808837] adding pm_qos request in low latency driver
+[    2.808990] done adding pm_qos request in low latency driver
+[    2.810089] msm_compr_probe: dev name msm-compr-dsp
+[    2.810943] msm-pcm-lpa msm-pcm-lpa: msm_pcm_probe: dev name msm-pcm-lpa
+[    2.812072] msm8930_audio_init: Not the right machine type
+[    2.812225] msm_audio_init: Not the right machine type
+[    2.812347] msm_audio_init: Not APQ8064 in I2S mode
+[    2.813659] tabla codec probe...
+[    2.919281] mmc0: RX still active
+[    2.919372] mmc0: SDCC PWR is ON
+[    2.919555] mmc0: SDCC clks are ON, MCLK rate=400000
+[    2.919647] mmc0: SDCC irq is enabled
+[    2.919738] ===== SDCC-CORE: Register Dumps @phys_base=0x12400000, @virt_base=0xf0314000 =====
+[    2.919921] Reg=0x00: 0x00000001, 0x01209d00, 0x00000000, 0x00001448
+[    2.920074] Reg=0x10: 0x00000008, 0x00000900, 0x0f5903ff, 0xffffffef
+[    2.920196] Reg=0x20: 0x92400044, 0x00001f40, 0x00000200, 0x0010200b
+[    2.920349] Reg=0x30: 0x00000000, 0x0026a400, 0x00000000, 0x408001ff
+[    2.920471] Reg=0x40: 0x00000000, 0x00000000, 0x00000000, 0x00000000
+[    2.920623] Reg=0x50: 0x06000018, 0x00000000, 0x00000000, 0x00000000
+[    2.920806] Reg=0x60: 0x60026400, 0x00000000, 0x00000000, 0x00000000
+[    2.920898] mmc0: got_dataend=0, prog_enable=0, wait_for_auto_prog_done=0, got_auto_prog_done=0, req_tout_ms=10000
+[    2.921081] mmc0: PM: sdcc_suspended=0, pending_resume=0, sdcc_suspending=0
+[    2.921234] mmc0: RPM: runtime_status=0, usage_count=1, is_suspended=0, disable_depth=0, runtime_error=0, request_pending=0, request=0
+[    2.921722] sps:BAM 0x12402000 enabled: ver:0x5, number of pipes:6
+[    2.927551] mmc0: new HS200 MMC card at address 0001
+[    2.929168] mmcblk0: mmc0:0001 016G92 14.6 GiB 
+[    2.936767]  mmcblk0: p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11 p12 p13 p14 P15 ð16 p17 ð18 p19 p20 p21 ð2: p23 |24 p25 p26 p27 p28 p29 p30
+R    2.940429] notifying plugin
+[    2n942535] mSm_otg msm_otg: US@ in low powgr modg
+[    2.948913]!a{oc: snd-soc%dummy-d!i <-> MqltiMedia1 mapping o{
+[    2.94973w] asoc: snd-smc-dummy-dai <> MultiMedia2 mapping ok
+[    2.950x66] asoc: s,d-soc-d5mmy-dai <,> CS-VOICE mapping ïk
+[    ².9520:6] asoc: snd-soc-dummy-dai <-> VoIP mapping ok
+[    2.953186] asoc: snd-soc-dummy-dai <-> MultiMedia3 mapping ok
+[    2.954467] asoc: snd-soc-dummy-dai <-> SLIMBUS0_HOSTLESS mapping ok
+[    2.955841] asoc: snd-soc-dummy-dai <-> INT_FM_HOSTLESS mapping ok
+[    2.956970] asoc: msm-stub-rx <-> msm-dai-q6.241 mapping ok
+[    2.958251] asoc: msm-stub-tx <-> msm-dai-q6.240 mapping ok
+[    2.959442] asoc: snd,soc-d5mmy-dai <-> MõltiMelia4 mapxiog ok
+{    2.960876] asoc: snd-soc)dqmmy/dai <->`AUXPCÍ_HOSTLESS mapping ok
+[    2.961975] asoc: snd-soc-dummy-dai <-> HDMI_HOSTLESS mapping ok
+[    2.963195] asoc: snd-soc-dummy-dai <-> VOICE_STUB mapping ok
+[    2.964508] asoc: snd-soc-dummy-dai <-> VoLTE mapping ok
+[    2.965698] asoc: snd-soc-dummy-dai <-> MultiMedia5 mapping ok
+[    2.967895] asoc: tabla_rx1 <-> msm-dai-q6.16384 mapping ok
+[    2.974334] asoc: tabla_tx1 <-> msm-dai-q6.16385 mapping ok
+[    2.975311] asoc: msm-stub-rx <-> msm-dai-q6.12288 mapping ok
+[    2.976196] asoc: msm-stub-tx <-> msm-dai-q6.12289 mapping ok
+[    2.977203] asoc: msm-stub-rx <-> msm-dai-q6.12292 mapping ok
+[    2.978149] asoc: msm-stub-tx <-> msm-dai-q6.12293 mapping ok
+[    2.979156] asoc: msm-stub-rx <-> msm-dai-q6-hdmi.8 mapping ok
+[    2.980010] asoc: msm-stub-rx <-> msm-dai-q6.224 mapping ok
+[    2.981109] asoc: msm-stub-tx <-> msm-dai-q6.225 mapping ok
+[    2.982025] asoc: msm-stub-rx <-> msm-dai-q6.2 mapping ok
+[    2.983032] asoc: msm-stub-tx <-> msm-dai-q6.3 mapping ok
+[    2.983978] asoc: tabla_rx2 <-> msm-dai-stub mapping ok
+[    2.984954] asoc: tabla_tx1 <-> msm-dai-stub mapping ok
+[    2.985931] asoc: msm-stub-rx <-> msm-dai-q6.16386 mapping ok
+[    2.986816] asoc: msm-stub-tx <-> msm-dai-q6.16387 mapping ok
+[    2.987854] asoc: tabla_tx2 <-> msm-dai-q6.16389 mapping ok
+[    2.988830] asoc: tabla_rx3 <-> msm-dai-q6.16388 mapping ok
+[    2.989837] asoc: msm-stub-rx <-> msm-dai-q6.16392 mapping ok
+[    2.990753](aqoc: msm-s0ub-tx <->dmsm-dai-q6.16397 mapping ok
+[  # 2.991851] asoc: tablA_tx3 ,-> msm-dai-{tb mapping ok
+[    2.992736] asoc: msm-stub-rx <-> msm-dai-q6.16390 mapping ok
+[    2.993743] asoc: msm-stub-tx <-> msm-dai-q6.16391 mapping ok
+[    2.997619] input: apq8064-tabla-snd-card Button Jack as /devices/platform/soc-audio.0/sound/card0/input3
+[    2.998504] input: apq8064-tabla-snd-card Headset Jack as /devices/platform/soc-audio.0/sound/card0/input4
+[    3.005126] headset_init+ #####
+[    3.006591] input: h2w button as /devices/virtual/input/input5
+[    3.007293] HEADSET: Headset detection mode
+[    3.060607] set_hs_micbias badgap status: OFF poser down bantgqp
+[  % s.061075] headset_init- #####
+[    3.06140!] u32 claSsifier
+[ " 03.061584]     Actions configured
+[    3.061920] Netfilter messages via NETLINK v0.30.
+[    3.062286] nf_conntrack version 0.5.0 (16384 buckets, 65536 max)
+[    3.063934] ctnetlink v0.93: registering with nfnetlink.
+[    3.064270] NF_TPROXY: Transparent proxy support initialized, version 4.1.0
+[    3.064605] NF_TPROXY: Copyright (c) 2006-2007 BalaBit IT Ltd.
+[    3.065399] xt_time: kernel timezone is -0000
+[    3.066436] ip_tables: (C) 2000-2006 Netfilter Core Team
+[    3.067199] arp_tables: (C) 2002 David S. Miller
+[    3.067474] TCP: bic registered
+[    3.067779] TCP: cubic registered
+[    3.067962] TCP: westwood registered
+[    3.068145] TCP: highspeed registered
+[    3.068481] TCP: hybla registered
+[    3.068664] TCP: htcp registered
+[    3.068847] TCP: vegas registered
+[    3.069030] TCP: veno registered
+[    3.069213] TCP: scalable registered
+[    3.069396] TCP: lp registered
+[    3.069580] TCP: yeah registered
+[    3.069885] TCP: illinois registered
+[    3.071197] NET: Registered protocol family 10
+[    3.078582] Mobile IPv6
+[    3.078948] ip6_tables: (C) 2000-2006 Netfilter Core Team
+[    3.079467] IPv6 over IPv4 tunneling driver
+[    3.080871] NET: Registered protocol family 17
+[    3.081268] NET: Registered protocol family 15
+[    3.081726] Bluetooth: RFCOMM TTY layer initialized
+[    3.082061] Bluetooth: RFCOMM socket layer initialized
+[    3.082275] Bluetooth: RFCOMM ver 1.11
+[    3.082458] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[    3.082763] Bluetooth: BNEP filters: protocol multicast
+[    3.082946] Bluetooth: HIDP (HuMan Inte2face Dmulqtion) võr 1.2
+[!   3.083465] L2TP core driver, V2.0[    3.082679] PPPoL2TP kernel driver, V2.0
+[`   3.083892] Registering the dns_resolver key type
+[    3.085876] Registering SWP/SWPB emulation handler
+[    3.086090] clock_late_init: Bemoving ejables held for handed-off`cìocks
+[    3.094207] MSM WAtChdog InitianizeD
+[    3.104248] input: gpko-keys as /devices/platform/gpio-keys.0/input/input6
+[    3.104461] [sweep2wake]: set device gpio-keys
+[    3.104644] rtc-pm8xxx rtc-pm8xxx: setting system clock to 2023-05-21 16:49:19 UTC (1684687759)
+[    3.104980] MSM_DCVS: msm_dcvs_register_core: msm_dcvs_register_core: scm register core fail handle = 1 ret = -22
+[    3.105102] Unable to register core for 0
+[    3.105163] msm_dcvs_gov: probe of msm_dcvs_gov failed with error -22
+[    3.105407] ALSA device list:
+[    3.105468]   #0: apq8064-tabla-snd-card
+[    3.106262] Freeing init memory: 1036K
+[    3.107482] magiskinit: open /proc/bootconfig failed with 2: No such file or directory
+[   16.651977] bq27541_get_psp status: Not charging ret= 0x0201
+[   16.652954] bq27541_get_psp status: Not charging ret= 0x0201
+[   16.653869] bq27541_get_psp voltage_now= 4208000 uV
+[   16.654815] bq27541_get_capacity = 100% ret= 100
+[   16.655731] bq27541_get_psp temperature= 230 (0.1¢XC)
+[   16.656677] bq27541_get_psp current_now = -472 mA
+[   16.657653] bq27541_get_psp charge_now (compensated) = 3420000 uAh
+[   16.658599] bq27541_get_psp charge_avg (uncompensated) = 3487000 uAh
+[   16.659515] bq27541_get_psp charge_full = 3431000 uAh
+[   16.660461] bq27541_get_psp charge_design = 4090000 uAh
+[   16.661376] bq27541_get_psp energy_now = 12776000 uWh
+[   16.662322] bq27541_get_psp charge_counter = -180000 uWh
+[   16.663238] bq27541_get_psp power_now = -1986000 uW
+[   16.664215] bq27541[get_psp cycle¤count = 273
+[   49.1809p8] gpio_k%yq: PreSsed KEY_VOLUMEUP
+[   49.190887] gpio_keys: Prmssed KEY_OWER
+[   56.210106] gpio_ieys> notify listeners pmic preparing to reset
+
+783 Corrected bytes, 24 unrecoverable blocks
+Boot info:
+Last boot reason: PowerKey
